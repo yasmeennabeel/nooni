@@ -1,0 +1,919 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.interFont-solight {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+
+}
+
+.interFont-solight-small {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    font-size: 17px;
+}
+
+.interFont-light {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-transform: uppercase;
+}
+
+.interFont-medium {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 70px;
+    color: black;
+    letter-spacing: 8px;
+
+}
+
+.interFont-medium-large {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 90px;
+    color: black;
+    letter-spacing: 8px;
+}
+
+.interFont-bold {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: black;
+}
+
+.interFont-bold-small {
+    font-family: "Inter", serif;
+    font-weight: 650;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: black;
+}
+.interFont-bold-large{
+    font-family: "Inter", serif;
+    font-weight: 650;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 90px;
+    color: black;
+    letter-spacing: 19px;
+
+}
+
+.interFont-medium-large {
+    font-family: "Inter", serif;
+    font-weight: 450;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: black;
+    letter-spacing: 10px;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+}
+
+container {
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.blackBan {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    /* justify-content: space-between; */
+}
+
+.blackBan a {
+    color: white;
+}
+.blackBan a:hover{
+color: rgb(160, 160, 160);
+}
+
+.roboto-main-light {
+    font-family: "Roboto", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.buttonsLang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    border-bottom: solid 1px rgba(206, 206, 206, 0.885);
+}
+
+.navbar {
+    position: sticky;
+    z-index: 6;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgLogo {
+    display: flex;
+    justify-content: center;
+}
+.searchIcon {
+    width: 30px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.navbarcontent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.userLogo,
+.favLogo,
+.cartLogo {
+    width: 30px;
+}
+.breadcrumb{
+    display: flex;
+    justify-content: center;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+    color: rgba(16, 16, 16, 0.792);
+}
+.gridList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.gridLeft i{
+    width: 25px;
+    height: 25px;
+}
+.gridLeft{
+    display: flex;
+    justify-content: center;
+}
+.gridRight{
+    display: flex;
+    justify-content: center;
+}
+.shopByDescrip {
+    display: flex;
+    flex-direction: column;
+}
+
+.shopItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    height: 20vh;
+
+}
+.item1 {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.item1 img {
+    width: 90px;
+}
+.shopItems{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filterType, .filterColor, .filterPrice, .filterMaterial, .filterSize, .filterPattern{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase
+  
+}
+.filterType, .filterColor, .filterPrice, .filterMaterial, .filterSize, .filterPattern li{
+text-transform: capitalize;
+font-size: 15px;
+font-weight: 500px;
+}
+.contentShop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+.allItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    cursor: pointer;
+}
+
+.allItems h4:hover {
+    color: rgba(209, 2, 2, 1);
+}
+
+.allFilters {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    height: 20vh;
+}
+
+.allFilters a {
+    color: black;
+    text-decoration: none;
+}
+.allFilters a:hover{
+color: rgba(209, 2, 2, 1);
+font-weight: bold;
+
+}
+
+.badge {
+    background-color: rgba(209, 2, 2, 1);
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.like {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    background-image: url('./pics/like.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: ease all 500ms;
+    }
+
+.buttonContainer button {
+    color: white;
+    visibility: hidden;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: ease all 500ms;
+
+}
+
+.buttonContainer:hover button {
+    visibility: visible;
+    background-color: rgba(209, 2, 2, 1);
+}
+
+.woodImg {
+    background-image: url('./pics/woodenchairwesh.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+    /* transition: width 4s;
+    transition-timing-function: ease;
+    transition-delay: 3s;
+    transition-duration: 2s; */
+    /* transition: width 2s linear 1s;
+    transition-timing-function: ease; */
+
+}
+
+.woodChair {
+    width: 25%;
+    height: 80vh;
+}
+
+.woodImg:hover {
+    background-image: url('./pics/woodenchair.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.like:hover {
+    background-color: rgba(209, 2, 2, 1);
+    border-radius: 50%;
+    border: 50px;
+    background-image: url('./pics/likewhite.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.price {
+    display: flex;
+}
+
+.price span {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.cabinet {
+    width: 25%;
+    height: 80vh;
+}
+
+.cabinetImg {
+    background-image: url('./pics/cabinet\ no\ hover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.cabinetImg:hover {
+    background-image: url('./pics/cabinethover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+
+}
+
+.bed {
+    width: 25%;
+    height: 80vh;
+}
+
+.bedImg {
+    background-image: url('./pics/bednohover.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.bedImg:hover {
+    background-image: url('./pics/bedhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.lamp {
+    width: 25%;
+    height: 80vh;
+}
+
+.lampImg {
+    background-image: url('./pics/lampnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.lampImg:hover {
+    background-image: url('./pics/lamphover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.smallChair {
+    width: 25%;
+    height: 80vh;
+}
+
+.smallChairImg {
+    background-image: url('./pics/chairnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.smallChairImg:hover {
+    background-image: url('./pics/chairhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.bigLamp {
+    width: 25%;
+    height: 80vh;
+}
+
+.bigLampImg {
+    background-image: url('./pics/lampsteelnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.bigLampImg:hover {
+    background-image: url('./pics/lampsteelhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.blackChair {
+    width: 25%;
+    height: 80vh;
+}
+
+.blackChairImg {
+    background-image: url('./pics/chairblacknohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.blackChairImg:hover {
+    background-image: url('./pics/chairblackhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+.rectTable{
+    width: 25%;
+    height: 80vh;
+}
+.rectTableImg{
+    background-image: url('./pics/greytablenohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+}
+.rectTableImg:hover {
+    background-image: url('./pics/greytablehover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+.greyCouch{
+    width: 25%;
+    height: 80vh;
+}
+.greyCouchImg{
+    background-image: url('./pics/greycouchnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+}
+.greyCouchImg:hover {
+    background-image: url('./pics/greycouchhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.khoosLamp{
+    width: 25%;
+    height: 80vh;
+}
+.khoosLampImg{
+    background-image: url('./pics/khooslampnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+}
+.khoosLampImg:hover {
+    background-image: url('./pics/lampsteelnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+
+.brownCabin{
+    width: 25%;
+    height: 80vh;
+}
+.brownCabinImg{
+    background-image: url('./pics/browncabinnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+}
+.brownCabinImg:hover {
+    background-image: url('./pics/browncabinhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+
+.branchTable{
+    width: 25%;
+    height: 80vh;
+}
+.branchTableImg{
+    background-image: url('./pics/branchtablenohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+}
+.branchTableImg:hover {
+    background-image: url('./pics/branchtablehover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.whiteCouch{
+    width: 25%;
+    height: 80vh;
+}
+.whiteCouchImg{
+    background-image: url('./pics/greycouchhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+}
+.whiteCouchImg:hover {
+    background-image: url('./pics/greycouchnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+
+
+.roundCabin{
+    width: 25%;
+    height: 80vh;
+}
+.roundCabinImg{
+    background-image: url('./pics/circlecabinnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+}
+.roundCabinImg:hover {
+    background-image: url('./pics/circlecabinhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+
+.lastCouch{
+    width: 25%;
+    height: 80vh;
+}
+.lastCouchImg{
+    background-image: url('./pics/whitecouchnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+}
+.lastCouchImg:hover {
+    background-image: url('./pics/greycouchhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+
+/* .pageEnd{
+
+} */
+
+.page-link{
+    color: black;
+}
+
+.page-link:hover{
+    color: white;
+    background-color: black;
+}
+.page-item{
+    color: white;
+}
+
+
+
+.logoFooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.logoFooter img {
+    width: 180px;
+
+}
+
+.copyrightContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyrightContainer a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-unstyled a {
+    text-decoration: none;
+}
+footer a:hover {
+    color: rgba(209, 2, 2, 1);
+}
+
+.list-unstyled input {
+    border: none;
+    padding: 5px;
+}
+
+footer a:hover {
+    color: rgba(209, 2, 2, 1);
+}
+.socialMedia{
+    display: flex;
+  
+}
+
+button i:hover{
+    color: rgba(209, 2, 2, 1);
+}

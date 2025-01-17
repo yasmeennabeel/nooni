@@ -1,0 +1,856 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.interFont-solight {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+
+}
+
+.interFont-solight-small {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    font-size: 17px;
+}
+
+.interFont-light {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-transform: uppercase;
+}
+
+.interFont-medium {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 70px;
+    color: black;
+    letter-spacing: 8px;
+
+}
+
+.interFont-medium-large {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 90px;
+    color: black;
+    letter-spacing: 8px;
+}
+
+.interFont-bold {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: black;
+}
+
+.interFont-bold-small {
+    font-family: "Inter", serif;
+    font-weight: 650;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: black;
+}
+.interFont-bold-large{
+    font-family: "Inter", serif;
+    font-weight: 650;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 90px;
+    color: black;
+    letter-spacing: 19px;
+
+}
+
+.interFont-medium-large {
+    font-family: "Inter", serif;
+    font-weight: 450;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: black;
+    letter-spacing: 10px;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+container {
+    width: 1511px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.blackBan {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    /* justify-content: space-between; */
+}
+
+.blackBan a {
+    color: white;
+}
+.blackBan a:hover{
+color: rgb(160, 160, 160);
+}
+
+.roboto-main-light {
+    font-family: "Roboto", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.buttonsLang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+
+}
+
+.navbar {
+    position: sticky;
+    z-index: 6;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgLogo {
+    display: flex;
+    justify-content: center;
+}
+
+/* .buttonLang{
+    display: flex;
+    justify-content: right;
+}
+.buttonLang li {
+    color: black;
+} */
+
+.searchIcon {
+    width: 30px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.navbarcontent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.userLogo,
+.favLogo,
+.cartLogo {
+    width: 30px;
+}
+
+.carouselImg {
+    width: 550px;
+    height: 80vh;
+    position: absolute;
+    right: 10px;
+    top: -150px;
+
+}
+
+.itemBig {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* 
+.shopBy .carousel-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+ } */
+/* .shopBy .carousel-item{
+    display: flex;
+ } */
+/* .item1 img{
+    width: 10%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+
+} */
+/* 
+
+@media screen and (max-width: 767px){
+    .itemBig{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .item1Big{
+        width: 150px;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+} */
+.itemBig:hover a{
+    color: rgba(209, 2, 2, 1);
+}
+
+.item1 {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.item1 img {
+    width: 90px;
+}
+
+/* .item1 img:hover{
+    background-color: rgb(0, 0, 0);
+} */
+
+.shopByDescrip {
+    display: flex;
+    flex-direction: column;
+}
+
+.shopItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    height: 20vh;
+
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.offcanvas-body-2 input {
+    width: 70%;
+}
+
+.offcanvas-body-2 img {
+    width: 30px;
+}
+
+.offcanvas-body-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.offersPics {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.offersPics h3,
+a {
+    z-index: 5;
+    width: 35%;
+}
+
+.lampleft {
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    
+
+}
+
+.greenpic {
+    width: 660px;
+    position: relative;
+    left: 0px;
+    bottom: -82px;
+    z-index: 5;
+    transition: ease all 500ms;
+    cursor: pointer;
+    border: 4px solid transparent;
+}
+.greenpic:hover{
+    border: 2px solid black;
+ margin: 0px;
+ padding: 15px;
+}
+
+.lampleft .lampalone {
+    width: 20%;
+    position: absolute;
+    top: 150px;
+    right: 55%;
+    z-index: 2;
+    transition: ease all 500ms;
+}
+.lampalone:hover{
+ padding: 0px;
+ margin: 15px;
+}
+
+.yellowpicRight .yellowpic {
+    width: 700px;
+    transition: ease all 500ms;
+    cursor: pointer;
+    border: 4px solid transparent;
+}
+.yellowpic:hover{
+    border: 2px solid black;
+ margin: 0px;
+ padding: 15px;
+}
+
+.yellowpicRight {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+.orangeTitle{
+    position: relative;
+}
+.orangeDescripTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+    left: 50px;
+}
+.orangeDescrip{
+    display: flex;
+    flex-direction: column;
+}
+
+/* url(https://demothemesky-be87.kxcdn.com/nooni/wp-content/uploads/2023/04/banner-3.jpg) */
+.orangepic {
+    background-color: rgba(217, 200, 184, 0.782);
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    transition: ease all 500ms;
+    position: relative;
+}
+.orangepic:hover{
+    top: 10px;
+
+}
+.orangeCouch{
+width: 40%;
+height: 30vh;
+}
+
+.allItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.allItems h4:hover {
+    color: rgba(209, 2, 2, 1);
+}
+
+.allItemsDescription {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    height: 20vh;
+    justify-content: center;
+}
+
+.allItemsDescription a {
+    color: black;
+    text-decoration: none;
+}
+.allItemsDescription a:hover{
+color: rgba(209, 2, 2, 1);
+font-weight: bold;
+
+}
+
+.badge {
+    background-color: rgba(209, 2, 2, 1);
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.like {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    background-image: url('./pics/like.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: ease all 500ms;
+    }
+
+.buttonContainer button {
+    color: white;
+    visibility: hidden;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: ease all 500ms;
+
+}
+
+.buttonContainer:hover button {
+    visibility: visible;
+    background-color: rgba(209, 2, 2, 1);
+}
+
+.woodImg {
+    background-image: url('./pics/woodenchairwesh.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+    /* transition: width 4s;
+    transition-timing-function: ease;
+    transition-delay: 3s;
+    transition-duration: 2s; */
+    /* transition: width 2s linear 1s;
+    transition-timing-function: ease; */
+
+}
+
+.woodChair {
+    width: 20%;
+    height: 80vh;
+}
+
+.woodImg:hover {
+    background-image: url('./pics/woodenchair.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.like:hover {
+    background-color: rgba(209, 2, 2, 1);
+    border-radius: 50%;
+    border: 50px;
+    background-image: url('./pics/likewhite.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.price {
+    display: flex;
+}
+
+.price span {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.cabinet {
+    width: 20%;
+    height: 80vh;
+}
+
+.cabinetImg {
+    background-image: url('./pics/cabinet\ no\ hover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.cabinetImg:hover {
+    background-image: url('./pics/cabinethover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+
+}
+
+.bed {
+    width: 22%;
+    height: 80vh;
+}
+
+.bedImg {
+    background-image: url('./pics/bednohover.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.bedImg:hover {
+    background-image: url('./pics/bedhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.lamp {
+    width: 20%;
+    height: 80vh;
+}
+
+.lampImg {
+    background-image: url('./pics/lampnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.lampImg:hover {
+    background-image: url('./pics/lamphover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.smallChair {
+    width: 20%;
+    height: 80vh;
+}
+
+.smallChairImg {
+    background-image: url('./pics/chairnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.smallChairImg:hover {
+    background-image: url('./pics/chairhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.bigLamp {
+    width: 20%;
+    height: 80vh;
+}
+
+.bigLampImg {
+    background-image: url('./pics/lampsteelnohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.bigLampImg:hover {
+    background-image: url('./pics/lampsteelhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.blackChair {
+    width: 20%;
+    height: 80vh;
+}
+
+.blackChairImg {
+    background-image: url('./pics/chairblacknohover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: ease all 500ms;
+
+}
+
+.blackChairImg:hover {
+    background-image: url('./pics/chairblackhover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.carouselWords {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.carouselWords a {
+    color: black;
+}
+
+.carouselWords a:hover {
+    color: rgba(209, 2, 2, 1);
+}
+
+/* .carouselWords p{
+    width: 48%;
+} */
+/* .elementor-1023 .elementor-element.elementor-element-f0f4aa5:not(.elementor-motion-effects-element-type-background),
+.elementor-1023 .elementor-element.elementor-element-f0f4aa5>.elementor-motion-effects-container>.elementor-motion-effects-layer{
+    background: url(https://demothemesky-be87.kxcdn.com/nooni/wp-content/uploads/2023/07/video-placeholder.jpg) 50% 50%;
+    background-size: cover;
+} */
+.videoContainer {
+    width: 1450px;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+}
+.video{
+    width: 100%;
+    height: 80vh;
+    object-fit: fill
+}
+
+.overlay {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    cursor: pointer;
+
+}
+.titleVideo{
+    position: absolute;
+    top: 40%;
+}
+.title a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.logoFooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.logoFooter img {
+    width: 180px;
+
+}
+
+.copyrightContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyrightContainer a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-unstyled a {
+    text-decoration: none;
+}
+footer a:hover {
+    color: rgba(209, 2, 2, 1);
+}
+
+.list-unstyled input {
+    border: none;
+    padding: 5px;
+}
+
+footer a:hover {
+    color: rgba(209, 2, 2, 1);
+}
+.socialMedia{
+    display: flex;
+  
+}
+
+button i:hover{
+    color: rgba(209, 2, 2, 1);
+}
