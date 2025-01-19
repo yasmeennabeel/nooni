@@ -101,7 +101,7 @@ body {
 }
 
 container {
-    width: 1511px;
+    width: 1500px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

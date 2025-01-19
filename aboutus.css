@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.interFont-solight {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+
+}
+
+.interFont-solight-small {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    font-size: 17px;
+}
+.interFont-solight-bigger {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    font-size: 20px;
+}
+
+.interFont-light {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-transform: uppercase;
+}
+
+.interFont-medium {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 70px;
+    color: black;
+    letter-spacing: 10px;
+
+}
+
+.interFont-medium-small {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 8px;
+
+}
+
+.interFont-medium-large {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 90px;
+    color: black;
+    letter-spacing: 8px;
+}
+
+.interFont-bold {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: black;
+}
+
+.interFont-bold-small {
+    font-family: "Inter", serif;
+    font-weight: 650;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: black;
+}
+.interFont-bold-large{
+    font-family: "Inter", serif;
+    font-weight: 650;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 90px;
+    color: black;
+    letter-spacing: 19px;
+
+}
+
+.interFont-medium-large {
+    font-family: "Inter", serif;
+    font-weight: 450;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: black;
+    letter-spacing: 10px;
+
+}
+
+
+body {
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+
+}
+.blackBan {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    /* justify-content: space-between; */
+}
+
+.blackBan a {
+    color: white;
+}
+.blackBan a:hover{
+color: rgb(160, 160, 160);
+}
+
+.roboto-main-light {
+    font-family: "Roboto", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.buttonsLang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+
+}
+
+.navbar {
+    position: sticky;
+    z-index: 6;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgLogo {
+    display: flex;
+    justify-content: center;
+}
+
+/* .buttonLang{
+    display: flex;
+    justify-content: right;
+}
+.buttonLang li {
+    color: black;
+} */
+
+.searchIcon {
+    width: 30px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.navbarcontent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.userLogo,
+.favLogo,
+.cartLogo {
+    width: 30px;
+}
+
+.breadcrumb{
+    display: flex;
+    justify-content: center;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+    color: rgba(16, 16, 16, 0.792);
+}
+
+/* --nooni-main-font-medium-family: Inter;
+    --nooni-main-font-medium-style: normal;
+    --nooni-main-font-medium-weight: 500;
+    --nooni-main-font-bold-family: Inter;
+    --nooni-main-font-bold-style: normal;
+    --nooni-main-font-bold-weight: 700;
+    --nooni-body-font-size: 15px; */
+
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.interTitleFont{
+    font-family: Inter;
+    font-style: normal;
+    width: var( --container-widget-width, 980px );
+    font-size: 45px;
+     font-weight: 400;
+     line-height: 26px;
+     letter-spacing: 0.375px;
+}
+.interDescrip{
+    font-family: Inter;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.375px;
+    color: rgb(126, 124, 124);
+
+}
+.title img{
+    width: 100%;
+}
+.howWork img{
+    max-width: 50%;
+    height: auto;    
+}
+.howWork img:hover{
+    transition: ease all 500ms;
+
+}
+.howWork{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* .howWorkContent p{
+    width: 550px;
+} */
+ .howWorkContent{
+    max-width: 50%;
+    padding: 20px;
+ }
+
+ 
