@@ -95,18 +95,18 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
 
 }
 
-container {
-    width: 1500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
 
 }
 
@@ -150,28 +150,25 @@ nav {
     z-index: 6;
     top: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.885);
 }
 
-.logoNav {
+.logoNav img {
     display: flex;
     justify-content: center;
-    width: 100%;
-}
-
-.imgLogo {
-    display: flex;
-    justify-content: center;
-}
-.searchIcon {
-    width: 30px;
-}
-
-.logo {
     width: 180px;
 }
 
-.navbarcontent {
+.searchIcon {
+    width: 70px;
+}
+
+
+.container-fluid {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -184,6 +181,26 @@ nav {
 .cartLogo {
     width: 30px;
 }
+.offcanvas-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.offcanvas-body-2 input {
+    width: 70%;
+}
+
+.offcanvas-body-2 img {
+    width: 30px;
+}
+
+.offcanvas-body-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .breadcrumb{
     display: flex;
     justify-content: center;
@@ -191,6 +208,14 @@ nav {
 .breadcrumb-item a{
     text-decoration: none;
     color: rgba(16, 16, 16, 0.792);
+}
+.breadcrumb li:hover{
+    color: rgba(209, 2, 2, 1);
+    text-decoration: underline;
+}
+.breadcrumb a:hover{
+    color: rgba(209, 2, 2, 1);
+    text-decoration: underline;
 }
 .gridList{
     display: flex;
@@ -214,25 +239,41 @@ nav {
     display: flex;
     flex-direction: column;
 }
+.shopByDescrip h4:hover{
+    color: rgba(209, 2, 2, 1);
+    cursor: pointer;
+}
 
-.shopItem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.ALLshopByItem {
     width: 100%;
     height: 20vh;
-    height: 20vh;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .item1 {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    gap: 15px;
+    overflow: hidden; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease;
 }
 
 .item1 img {
-    width: 90px;
+    width: 95px;
+    display: block; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+.item1 img:hover{
+    background-color: rgba(128, 128, 128, 0.5); 
+    mix-blend-mode: multiply; 
+    transform: scale(1.05);    
+    cursor: pointer;
+
+}
+
 .shopItems{
     width: 100%;
     height: 40vh;
@@ -254,13 +295,13 @@ font-weight: 500px;
 }
 .contentShop{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
+    /* flex-direction: column; */
+    min-height: 100vh;
+    justify-content: space-evenly;
 }
 
 
-
+/* 
 .allItems {
     display: flex;
     flex-wrap: wrap;
@@ -268,7 +309,7 @@ font-weight: 500px;
     align-items: center;
     width: 80%;
     cursor: pointer;
-}
+} */
 
 .allItems h4:hover {
     color: rgba(209, 2, 2, 1);
@@ -281,6 +322,59 @@ font-weight: 500px;
     height: 20vh;
 }
 
+@media (max-width: 768px) {
+    .allFilters {
+        display: none;
+    }
+    .filter-icon {
+        display: block;
+        position: fixed;
+        width: 25px;
+        top: 150px;
+        left: 20px;
+        font-size: 24px;
+        color: black;
+        cursor: pointer;
+        z-index: 1050;
+    }
+    .filter-icon:hover{
+        color: rgba(209, 2, 2, 1);
+    }
+    .shopItems{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        height: 20vh;
+    }
+    .navbar .menu-icon,
+    .navbar .logoNav,
+    .navbar .user-actions {
+        display: flex;
+        align-items: center;
+    }
+    .menu-icon {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .logoNav {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .user-actions {
+        gap: 10px;
+    }
+    .copyrightContainer{
+        gap: 30px;
+    }
+}
+.filter-icon {
+    /* display: none; */
+    /* color: white; */
+    width: 20px;
+}
 .allFilters a {
     color: black;
     text-decoration: none;
@@ -297,6 +391,64 @@ font-weight: bold;
     text-transform: uppercase;
 }
 
+.buttonContainer button {
+    color: white;
+    visibility: hidden;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: ease all 500ms;
+}
+
+.buttonContainer:hover button {
+    visibility: visible;
+    background-color: rgba(209, 2, 2, 1);
+}
+.itemsGrid{
+    flex: 1; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+.card{
+    transition: ease all 400ms;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#woodChair{
+    background-image: url('./pics/woodenchairwesh.jpg');
+    width: 100%;
+    height: 400px;
+}
+#woodChair:hover{
+    background-image: url('./pics/woodenchair.jpg');
+}
+
+.icon{
+    position: relative;
+    width: 100%;
+    
+    /* display: none; */
+}
+.icon:hover p{
+    display: block;
+}
+.icon p{
+    display: none;
+    position: absolute;
+    bottom: -180px;
+    right: 40px;
+    background-color: rgba(209, 2, 2, 1);
+    color: white;
+    border-radius: 5px;
+}
+
 .like {
     width: 35px;
     height: 35px;
@@ -307,64 +459,11 @@ font-weight: bold;
     background-size: cover;
     background-repeat: no-repeat;
     transition: ease all 500ms;
+    position: absolute;
+    bottom: -180px;
+    right: 0px;
     }
-
-.buttonContainer button {
-    color: white;
-    visibility: hidden;
-    width: 100%;
-    text-transform: uppercase;
-    padding: 15px;
-    transition: ease all 500ms;
-
-}
-
-.buttonContainer:hover button {
-    visibility: visible;
-    background-color: rgba(209, 2, 2, 1);
-}
-
-.woodImg {
-    background-image: url('./pics/woodenchairwesh.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-    /* transition: width 4s;
-    transition-timing-function: ease;
-    transition-delay: 3s;
-    transition-duration: 2s; */
-    /* transition: width 2s linear 1s;
-    transition-timing-function: ease; */
-
-}
-
-.woodChair {
-    width: 25%;
-    height: 80vh;
-}
-
-.woodImg:hover {
-    background-image: url('./pics/woodenchair.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
+   
 .like:hover {
     background-color: rgba(209, 2, 2, 1);
     border-radius: 50%;
@@ -374,491 +473,135 @@ font-weight: bold;
     background-repeat: no-repeat;
     cursor: pointer;
 }
-
-.price {
-    display: flex;
+.card:hover button{
+    display: block !important;
+    color: black;
+    background-color: white;
+}
+.card button:hover{
+    background-color: rgba(209, 2, 2, 1);
+    color: white;
 }
 
-.price span {
-    text-decoration: line-through;
-    color: grey;
+.cardTitle:hover h4{
+    color: rgba(209, 2, 2, 1);
 }
-
-.cabinet {
-    width: 25%;
-    height: 80vh;
-}
-
-.cabinetImg {
+#cabinet {
     background-image: url('./pics/cabinet\ no\ hover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
+    height: 400px;
 }
 
-.cabinetImg:hover {
+#cabinet:hover {
     background-image: url('./pics/cabinethover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-
 }
 
-.bed {
-    width: 25%;
-    height: 80vh;
-}
 
-.bedImg {
+#bed {
     background-image: url('./pics/bednohover.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
+    height: 400px;
 }
 
-.bedImg:hover {
+#bed:hover {
     background-image: url('./pics/bedhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
 }
 
-.lamp {
-    width: 25%;
-    height: 80vh;
-}
-
-.lampImg {
+#lamp {
     background-image: url('./pics/lampnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
+    height: 400px;
 }
 
-.lampImg:hover {
+
+#lamp:hover {
     background-image: url('./pics/lamphover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
+    
 }
 
-.smallChair {
-    width: 25%;
-    height: 80vh;
-}
-
-.smallChairImg {
-    background-image: url('./pics/chairnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
-}
-
-.smallChairImg:hover {
-    background-image: url('./pics/chairhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
-.bigLamp {
-    width: 25%;
-    height: 80vh;
-}
-
-.bigLampImg {
-    background-image: url('./pics/lampsteelnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
-}
-
-.bigLampImg:hover {
-    background-image: url('./pics/lampsteelhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
-.blackChair {
-    width: 25%;
-    height: 80vh;
-}
-
-.blackChairImg {
-    background-image: url('./pics/chairblacknohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
-}
-
-.blackChairImg:hover {
-    background-image: url('./pics/chairblackhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-.rectTable{
-    width: 25%;
-    height: 80vh;
-}
-.rectTableImg{
-    background-image: url('./pics/greytablenohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-}
-.rectTableImg:hover {
-    background-image: url('./pics/greytablehover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-.greyCouch{
-    width: 25%;
-    height: 80vh;
-}
-.greyCouchImg{
-    background-image: url('./pics/greycouchnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-}
-.greyCouchImg:hover {
-    background-image: url('./pics/greycouchhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
-.khoosLamp{
-    width: 25%;
-    height: 80vh;
-}
-.khoosLampImg{
-    background-image: url('./pics/khooslampnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-}
-.khoosLampImg:hover {
-    background-image: url('./pics/lampsteelnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
-
-.brownCabin{
-    width: 25%;
-    height: 80vh;
-}
-.brownCabinImg{
+#brownCabin{
     background-image: url('./pics/browncabinnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
+    height: 400px;
 }
-.brownCabinImg:hover {
+
+#brownCabin:hover {
     background-image: url('./pics/browncabinhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
+    
 }
-
-
-.branchTable{
-    width: 25%;
-    height: 80vh;
-}
-.branchTableImg{
+#branchTable{
     background-image: url('./pics/branchtablenohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
+    height: 400px;
 }
-.branchTableImg:hover {
+#branchTable:hover{
     background-image: url('./pics/branchtablehover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
 
 }
-
-.whiteCouch{
-    width: 25%;
-    height: 80vh;
-}
-.whiteCouchImg{
-    background-image: url('./pics/greycouchhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-}
-.whiteCouchImg:hover {
+#whiteCouch{
     background-image: url('./pics/greycouchnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
+    height: 400px;
 }
-
-
-
-.roundCabin{
-    width: 25%;
-    height: 80vh;
-}
-.roundCabinImg{
-    background-image: url('./pics/circlecabinnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-}
-.roundCabinImg:hover {
-    background-image: url('./pics/circlecabinhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
-
-.lastCouch{
-    width: 25%;
-    height: 80vh;
-}
-.lastCouchImg{
-    background-image: url('./pics/whitecouchnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-}
-.lastCouchImg:hover {
+#whiteCouch:hover{
     background-image: url('./pics/greycouchhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+#roundCabin{
+    background-image: url('./pics/circlecabinnohover.jpg');
     width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
+    height: 400px;
+}
+#roundCabin:hover{
+    background-image: url('./pics/circlecabinhover.jpg');
+
+}
+#lastCouch{
+    background-image: url('./pics/whitecouchnohover.jpg');
+    width: 100%;
+    height: 400px;
+}
+#lastCouch:hover{
+    background-image: url('./pics/greycouchhover.jpg');
+    
+}
+
+#smallChair{
+    background-image: url('./pics/chairnohover.jpg');
+    width: 100%;
+    height: 400px;
+}
+#smallChair:hover{
+    background-image: url('./pics/chairhover.jpg');
+
+}
+
+#bigLamp{
+    background-image: url('./pics/lampsteelnohover.jpg');
+    width: 100%;
+    height: 400px;
+}
+#bigLamp:hover{
+    background-image: url('./pics/lampsteelhover.jpg');
+}
+#blackChair{
+    background-image: url('./pics/chairblacknohover.jpg');
+    width: 100%;
+    height: 400px;
+}
+#blackChair:hover{
+    background-image: url('./pics/chairblackhover.jpg');
 
 }
 
 
-/* .pageEnd{
-
-} */
-
+.pagesNum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+}
 .page-link{
     color: black;
 }
@@ -870,8 +613,6 @@ font-weight: bold;
 .page-item{
     color: white;
 }
-
-
 
 .logoFooter {
     display: flex;
@@ -897,6 +638,13 @@ font-weight: bold;
 .list-unstyled a {
     text-decoration: none;
 }
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
 footer a:hover {
     color: rgba(209, 2, 2, 1);
 }
@@ -916,4 +664,11 @@ footer a:hover {
 
 button i:hover{
     color: rgba(209, 2, 2, 1);
+}
+.subscribeButton{
+    color: white;
+    background-color: black;
+}
+.subscribeButton:hover{
+    background-color: rgba(209, 2, 2, 1);
 }

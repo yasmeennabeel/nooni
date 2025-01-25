@@ -73,7 +73,8 @@
     font-size: 13px;
     color: black;
 }
-.interFont-bold-large{
+
+.interFont-bold-large {
     font-family: "Inter", serif;
     font-weight: 650;
     font-style: normal;
@@ -96,17 +97,17 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-container {
-    width: 1500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
 
 }
 
@@ -123,8 +124,9 @@ container {
 .blackBan a {
     color: white;
 }
-.blackBan a:hover{
-color: rgb(160, 160, 160);
+
+.blackBan a:hover {
+    color: rgb(160, 160, 160);
 }
 
 .roboto-main-light {
@@ -142,7 +144,7 @@ color: rgb(160, 160, 160);
 nav {
     position: sticky;
     top: 0;
-
+    border-bottom: solid 1px rgba(206, 206, 206, 0.885);
 }
 
 .navbar {
@@ -150,18 +152,28 @@ nav {
     z-index: 6;
     top: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.885);
 }
 
-.logoNav {
+.logoNav img {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 180px;
 }
 
-.imgLogo {
-    display: flex;
-    justify-content: center;
+.searchIcon {
+    width: 70px;
+}
+
+@media (max-width: 768px) {
+    .shopByDescrip {
+        /* display: none; */
+        visibility: hidden;
+    }
 }
 
 /* .buttonLang{
@@ -180,7 +192,7 @@ nav {
     width: 180px;
 }
 
-.navbarcontent {
+.container-fluid {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -192,6 +204,7 @@ nav {
 .favLogo,
 .cartLogo {
     width: 30px;
+    cursor: pointer;
 }
 
 .carouselImg {
@@ -212,6 +225,27 @@ nav {
     position: relative;
     width: 100%;
     height: 100vh;
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.newArrive,
+.titleCarousel,
+.contentCarousel,
+.shopCarousel {
+    animation: textFadeIn 1.5s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 /* 
@@ -252,7 +286,7 @@ nav {
         flex-direction: column;
     }
 } */
-.itemBig:hover a{
+.itemBig:hover a {
     color: rgba(209, 2, 2, 1);
 }
 
@@ -304,7 +338,182 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
 }
+.lampalone {
+    width: 180px;
+    transition: ease all 500ms;
+    
+}
 
+.lampalone:hover {
+    padding: 0px;
+    margin: 15px;
+}
+
+.offersRight img {
+    width: 650px;
+    transition: ease all 500ms;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.offersRight img:hover{
+    border: 2px solid black;
+ margin: 0px;
+ padding: 10px;
+}
+
+.offersRight {
+    display: flex;
+    justify-content: right;
+
+}
+
+.offersBottom img{
+    transition: ease all 500ms;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.greenpic:hover{
+    border: 2px solid black;
+ margin: 0px;
+ padding: 10px;
+}
+.offersLeftContent a:hover{
+    color: rgba(209, 2, 2, 1);
+}
+#carouselExampleIndicators {
+    margin-bottom: 40px; 
+}
+
+#carouselExampleIndicators1 {
+    margin-bottom: 40px; 
+}
+
+.offersPics {
+    margin-top: 20px; 
+}
+
+@media (max-width: 768px) {
+    #carouselExampleIndicators{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .offersPics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px; 
+    }
+
+    .offersRight {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .offersRight img {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .offersLeft {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .offersLeftContent {
+        flex: 1;
+        max-width: 60%;
+        text-align: left;
+        padding: 10px;
+    }
+    .offersLeftContent h3{
+        font-size: 1.5rem;
+    }
+    .offersLeftContent a{
+        font-size: 1rem;
+    }
+
+    .lampalone {
+        flex: 1;
+        max-width: 30%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .offersBottom img {
+        order: 3;
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+        margin-top: 20px; 
+    }
+    .orangeTitle {
+        margin-top: 40px; 
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .orangeDescripTitle {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .orangeDescrip {
+        text-align: center;
+    }
+
+    .orangeTitle img {
+        width: 70%; 
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+
+/* @media (max-width: 768px) {
+    .offersPics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100vh; 
+    }
+
+    .offersLeft, .offersRight {
+        display: flex;
+        width: 100%; 
+    }
+
+    .offersLeftContent {
+        text-align: center; 
+        padding: 10px;
+    }
+
+    .offersLeft img, .offersRight img {
+        width: 100%; 
+        max-width: 100%;
+        height: auto;
+        
+    }
+} */
+
+/* 
 .offersPics {
     display: flex;
     flex-direction: column;
@@ -324,7 +533,6 @@ a {
 .lampleft {
     display: flex;
     flex-direction: column;
-    /* position: relative; */
     
 
 }
@@ -376,11 +584,27 @@ a {
     position: absolute;
     top: 0;
     right: 50px;
-}
-.orangeTitle{
+} */
+
+.orangeTitle {
     position: relative;
+    height: 200px;
+    background-color: rgba(217, 200, 184, 0.782);
+    overflow: hidden;
+
 }
-.orangeDescripTitle{
+
+.orangeTitle:hover img {
+    top: 1rem;
+}
+
+.orangeDescrip {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.orangeDescripTitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,32 +614,28 @@ a {
     z-index: 2;
     left: 50px;
 }
-.orangeDescrip{
+
+.orangeDescrip {
     display: flex;
     flex-direction: column;
 }
 
-/* url(https://demothemesky-be87.kxcdn.com/nooni/wp-content/uploads/2023/04/banner-3.jpg) */
-.orangepic {
-    background-color: rgba(217, 200, 184, 0.782);
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: right;
-    cursor: pointer;
-    transition: ease all 500ms;
-    position: relative;
-}
-.orangepic:hover{
+
+.orangepic:hover {
     top: 10px;
 
 }
-.orangeCouch{
-width: 40%;
-height: 30vh;
+
+.orangeTitle img {
+    width: 40%;
+    height: 35vh;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    transition: ease all 400ms;
 }
 
-.allItems {
+/* .allItems {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -474,8 +694,8 @@ font-weight: bold;
 .buttonContainer:hover button {
     visibility: visible;
     background-color: rgba(209, 2, 2, 1);
-}
-
+} */
+/* 
 .woodImg {
     background-image: url('./pics/woodenchairwesh.jpg');
     background-size: cover;
@@ -488,12 +708,6 @@ font-weight: bold;
     justify-content: flex-end;
     align-items: flex-end;
     transition: ease all 500ms;
-    /* transition: width 4s;
-    transition-timing-function: ease;
-    transition-delay: 3s;
-    transition-duration: 2s; */
-    /* transition: width 2s linear 1s;
-    transition-timing-function: ease; */
 
 }
 
@@ -745,6 +959,189 @@ font-weight: bold;
     align-items: flex-end;
     cursor: pointer;
 
+} */
+.allItems {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f8f8f8;
+}
+
+.buttonContainer button {
+    color: white;
+    visibility: hidden;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: ease all 500ms;
+}
+
+.buttonContainer:hover button {
+    visibility: visible;
+    background-color: rgba(209, 2, 2, 1);
+}
+
+.allItemsDescription a {
+    color: black;
+    text-decoration: none;
+}
+
+.allItemsDescription a:hover {
+    color: rgba(209, 2, 2, 1);
+    font-weight: bold;
+
+}
+
+.badge {
+    background-color: rgba(209, 2, 2, 1);
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.card {
+    transition: ease all 400ms;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#woodChair {
+    background-image: url('./pics/woodenchairwesh.jpg');
+    width: 100%;
+    height: 400px;
+}
+
+#woodChair:hover {
+    background-image: url('./pics/woodenchair.jpg');
+}
+
+.icon {
+    position: relative;
+    width: 100%;
+
+    /* display: none; */
+}
+
+.icon:hover p {
+    display: block;
+}
+
+.icon p {
+    display: none;
+    position: absolute;
+    bottom: -180px;
+    right: 40px;
+    background-color: rgba(209, 2, 2, 1);
+    color: white;
+    border-radius: 5px;
+}
+
+.like {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    background-image: url('./pics/like.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: ease all 500ms;
+    position: absolute;
+    bottom: -180px;
+    right: 0px;
+}
+
+.like:hover {
+    background-color: rgba(209, 2, 2, 1);
+    border-radius: 50%;
+    border: 50px;
+    background-image: url('./pics/likewhite.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.card:hover button {
+    display: block !important;
+    color: black;
+    background-color: white;
+}
+
+.card button:hover {
+    background-color: rgba(209, 2, 2, 1);
+    color: white;
+}
+
+.cardTitle:hover h4 {
+    color: rgba(209, 2, 2, 1);
+}
+
+#cabinet {
+    background-image: url('./pics/cabinet\ no\ hover.jpg');
+    width: 100%;
+    height: 400px;
+}
+
+#cabinet:hover {
+    background-image: url('./pics/cabinethover.jpg');
+}
+
+
+#bed {
+    background-image: url('./pics/bednohover.jpg');
+    width: 100%;
+    height: 400px;
+}
+
+#bed:hover {
+    background-image: url('./pics/bedhover.jpg');
+}
+
+#lamp {
+    background-image: url('./pics/lampnohover.jpg');
+    width: 100%;
+    height: 400px;
+}
+
+
+#lamp:hover {
+    background-image: url('./pics/lamphover.jpg');
+
+}
+
+#branchTable {
+    background-image: url('./pics/branchtablenohover.jpg');
+    width: 100%;
+    height: 400px;
+}
+
+#branchTable:hover {
+    background-image: url('./pics/branchtablehover.jpg');
+
+}
+
+#brownCabin {
+    background-image: url('./pics/browncabinnohover.jpg');
+    width: 100%;
+    height: 400px;
+}
+
+#brownCabin:hover {
+    background-image: url('./pics/browncabinhover.jpg');
+
+}
+
+#whiteCouch {
+    background-image: url('./pics/greycouchnohover.jpg');
+    width: 100%;
+    height: 400px;
+}
+
+#whiteCouch:hover {
+    background-image: url('./pics/greycouchhover.jpg');
 }
 
 .carouselWords {
@@ -783,7 +1180,8 @@ font-weight: bold;
     position: relative;
 
 }
-.video{
+
+.video {
     width: 100%;
     height: 80vh;
     object-fit: fill
@@ -801,11 +1199,13 @@ font-weight: bold;
     cursor: pointer;
 
 }
-.titleVideo{
+
+.titleVideo {
     position: absolute;
     top: 40%;
 }
-.title a{
+
+.title a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.521);
 }
@@ -834,6 +1234,7 @@ font-weight: bold;
 .list-unstyled a {
     text-decoration: none;
 }
+
 footer a:hover {
     color: rgba(209, 2, 2, 1);
 }
@@ -846,11 +1247,12 @@ footer a:hover {
 footer a:hover {
     color: rgba(209, 2, 2, 1);
 }
-.socialMedia{
+
+.socialMedia {
     display: flex;
-  
+
 }
 
-button i:hover{
+button i:hover {
     color: rgba(209, 2, 2, 1);
 }

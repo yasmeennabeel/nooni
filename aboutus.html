@@ -16,18 +16,24 @@
         <div class="blackBan bg-black text-white text-uppercase p-2">
             <p class="mb-0">Up to 40% off Best-Selling Furniture. <a href="#" class="text-decoration-none text-light">SHOP NOW</a></p>
         </div>
-        
         <nav class="navbar navbar-expand-lg bg-white p-4">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
                 <div class="d-flex align-items-center">
+                    <a class="btn btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <a href="#" class="me-3"><img src="./pics/search_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="Search" class="searchIcon"></a>
+                </div>
+        
+                <div class="text-center mx-auto">
                     <img src="./pics/logo.png" alt="Logo" class="logo">
                 </div>
-
+        
                 <div class="d-flex align-items-center">
                     <img src="./pics/person_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="User" class="userLogo me-2">
                     <img src="./pics/favorite_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="Favorites" class="favLogo me-2">
@@ -36,16 +42,112 @@
             </div>
         </nav>
 
+        <div class="offcanvas offcanvasLeft offcanvas-start firstCanva" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- Default dropend button -->
+                <div class="btn-group dropend">
+                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </button>
+                    <ul class="dropdown-menu p-4">
+                        <!-- Dropdown menu links -->
+                        <li>Furniture 1</li>
+                        <li>Furniture 1</li>
+
+                    </ul>
+                </div>
+                <div class="btn-group dropend">
+                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </button>
+                    <ul class="dropdown-menu p-4">
+                        <!-- Dropdown menu links -->
+                        <li>Furniture 1</li>
+                        <li>Furniture 1</li>
+
+                    </ul>
+                </div>
+                <div class="btn-group dropend">
+                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Product
+                    </button>
+                    <ul class="dropdown-menu p-4">
+                        <!-- Dropdown menu links -->
+                        <li>Furniture 1</li>
+                        <li>Furniture 1</li>
+
+                    </ul>
+                </div>
+                <div class="btn-group dropend">
+                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </button>
+                    <ul class="dropdown-menu p-4">
+                        <!-- Dropdown menu links -->
+                        <li>Furniture 1</li>
+                        <li>Furniture 1</li>
+
+                    </ul>
+                </div>
+                <div class="btn-group dropend">
+                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                    </button>
+                    <ul class="dropdown-menu p-4">
+                        <!-- Dropdown menu links -->
+                        <li>Furniture 1</li>
+                        <li>Furniture 1</li>
+
+                    </ul>
+                </div>
+                <div class="btn-group dropend">
+                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Contact Us
+                    </button>
+                    <ul class="dropdown-menu p-4">
+                        <!-- Dropdown menu links -->
+                        <li>Furniture 1</li>
+                        <li>Furniture 1</li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="offcanvas offcanvasRight offcanvas-end firstCanva" tabindex="-1" id="offcanvasExample1"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Search for products (0)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body-2 m-4">
+                <input type="text" placeholder="Search for products..." class="border-0">
+                <img src="./pics/search_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="searchIcon"
+                    class="searchIcon">
+
+            </div>
+        </div>
         <div class="breadcrumb mt-4">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">About Us</li>
             </ol>
         </div>
-
         <div class="title text-center my-5">
-            <h1 class="interTitleFont mb-4">About Noon'i</h1>
-            <p class="interDescrip mx-auto">Noon’i was established in 1990, consectetur eleifend commodo at, consectetur eu justo. Sed viverra consectetur risus nec ultricies.</p>
+            <h1 class="interTitleFont text-black mb-4">About Noon'i</h1>
+            <p class="interDescrip mx-auto titleContent mb-5">Noon’i was established in 1990, consectetur eleifend commodo at, consectetur eu justo. Sed viverra consectetur risus nec ultricies.</p>
             <img src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/04/about-parallax-1.jpg" alt="About Image" class="img-fluid">
         </div>
 
@@ -60,6 +162,162 @@
                 <h4 class="interFont-bold-small fs-5">Marketing and Selling</h4>
                 <p class="interDescrip fs-5">Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus.</p>
             </div>
+        </div>
+
+        <div class="teamSection mb-5">
+            <h3 class="interFont-bold">Our Team</h3>
+            <div class=" row teamMembers ">
+                <div class="col-12 col-sm-6 col-md-3 member p-4">
+                <img src="./pics/john.png">
+                <h5 class="interFont-bold-small fs-6 text-uppercase mt-4">CEO & Founder</h5>
+                <p class="interDescrip">John Hossain</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 member p-4">
+                <img src="./pics/ceo.png">
+                <h5 class="interFont-bold-small fs-6 text-uppercase mt-4">Graphic Design</h5>
+                <p class="interDescrip">Chris Patterson</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 member p-4">
+                <img src="./pics/isabella.png">
+                <h5 class="interFont-bold-small fs-6 text-uppercase mt-4">Marketing</h5>
+                <p class="interDescrip">Isabella</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 member p-4">
+                <img src="./pics/charlotte.png">
+                <h5 class="interFont-bold-small fs-6 text-uppercase mt-4">Saler</h5>
+                <p class="interDescrip">Charlotte</p>
+            </div>
+            </div>
+        </div>
+        <div class="deliver mb-5">
+            <h1 class="interFont-solight text-white text-capitalize text-center fw-semibold">We deliver genuine products</h1>
+            <p class="interFont-solight-small text-white text-center">Sed viverra consectetur risus nec ultricies. Curabitur tincidunt tincidunt urna id maximus.</p>
+            <button type="button" class=" p-2 border-0 interFont-solight-bigger fw-bold text-center text-uppercase fs-6">Contact Us</button>
+        </div>
+        <div class="companies mt-5">
+            <img src="./pics/company.png">
+            <img src="./pics/companyyy.png">
+            <img src="./pics/housemart.png">
+            <img src="./pics/realestate.png">
+            <img src="./pics/creativedesign.png">
+            <img src="./pics/company.png">
+
+        </div>
+
+        <div class="footer mt-5">
+
+            <footer class=" text-center text-lg-start" style="background-color: #f1f1f1;">
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                        <div
+                            class="logoFooter shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto">
+                            <img src="./pics/logo.png" alt="" loading="lazy" class="mb-5" />
+                            <p class="text-center">Text: +00(234)23-45-666</p>
+                            <p class="text-center">Mon – Fri: 8 am – 8 pm</p>
+                            <p class="text-center">Sat – Sun: 8 am – 7 pm </p>
+                        </div>
+                    </div>
+
+                    <div class=" col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 interFont-bold fs-6">about</h5>
+
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="#" class="footerLink  interFont-solight-small ">Our
+                                    Story</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="footerLink interFont-solight-small ">Careers</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class=" footerLink interFont-solight-small ">Influencers</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="footerLink interFont-solight-small ">Join
+                                    our team</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 interFont-bold fs-6">Customer Services</h5>
+
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="#!" class=" footerLink interFont-solight-small ">Contact
+                                    Us</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="footerLink  interFont-solight-small ">Customer
+                                    Service</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="footerLink  interFont-solight-small ">Find
+                                    Store</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="footerLink  interFont-solight-small ">Book
+                                    appointment</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="footerLink  interFont-solight-small ">Shipping &
+                                    Returns</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class=" signUp col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 interFont-bold fs-6">SIGN UP FOR EMAILS</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p><i class="fas fa-map-marker-alt pe-1 interFont-solight-small "></i>Enjoy 15% off*
+                                    your first order
+                                    when sign up to our newsletter</p>
+                            </li>
+                            <li>
+                                <input type="email" placeholder="Your email address">
+                                <button type="button"
+                                    class="subscribeButton ms-2 ps-4 pe-4 pt-2 pb-2 interFont-bold-small border-0">SUBSCRIBE</button>
+                            </li>
+                        </ul>
+                        <div class="socialMedia ">
+                            <button type="button" class="btn m-2">
+                                <i class="bi bi-facebook"></i>
+                            </button>
+                            <button type="button" class="btn m-2">
+                                <i class="bi bi-twitter"></i>
+                            </button>
+                            <button type="button" class="btn m-2">
+                                <i class="bi bi-instagram"></i>
+                            </button>
+                            <button type="button" class="btn m-2">
+                                <i class="bi bi-pinterest"></i>
+                            </button>
+                        </div>
+                    </div>
+               
+                </div>
+              
+
+                <div class=" copyrightContainer border-top text-center p-3 border-black ">
+                    <div class="linkFooter">
+                        <a href="#" class="p-2">Privacy Policy</a>
+                        <a href="#" class="p-2">Help</a>
+                        <a href="#" class="p-2">FAQs</a>
+                    </div>
+                    <p>
+                        © Nooni. All Rights Reserved.
+                    </p>
+                    <div class="payFooter">
+                        <img src="./pics/ca.png" alt="">
+                    </div>
+                </div>
+            </footer>
+
         </div>
     </div>
 

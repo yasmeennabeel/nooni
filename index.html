@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <container>
+    <div class="container">
         <div class="blackBan bg-black roboto-main-light pt-2 ps-5">
             <p>
                 Up to 40% off Best-Selling Furniture. <a href="#">SHOP NOW</a>
@@ -43,35 +43,19 @@
                 </div>
             </div> -->
         </div>
-        <nav class="navbar navbar-expand-lg bg-white  p-4">
-            <div class="navbarcontent">
-                <ul class="navbar-nav  mb-2 mb-lg-0 d-flex">
 
-                    <li class="nav-item">
-                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                        <a class="btn btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                            aria-controls="offcanvasExample">
-                            <span class="navbar-toggler-icon"></span>
-
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn" data-bs-toggle="offcanvas" href="#offcanvasExample1" role="button"
-                            aria-controls="offcanvasExample1">
-                            <img src="./pics/search_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="searchIcon"
-                                class="searchIcon">
-                        </a>
-                    </li>
-                </ul>
-                <div class="logoNav">
-                    <img src="./pics/logo.png" class="logo">
+        <nav class="navbar d-flex col-12">
+            <div class="menu-icon d-flex gap-3" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
+                <i class="bi bi-list"></i>
+                <div class="menu-icon searchIcon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1">
+                    <i class="bi bi-search"></i>
                 </div>
+            </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+            <div class="logoNav">
+                <img src="./pics/logo.png" />
+            </div>
+            <div class="userActions ">
                 <img src="./pics/person_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" class="userLogo">
                 <img src="./pics/favorite_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="fav" class="favLogo">
                 <img src="./pics/shopping_cart_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="cart"
@@ -79,22 +63,19 @@
             </div>
         </nav>
 
-
-
-        <div class="offcanvas offcanvasLeft offcanvas-start firstCanva" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvasLeft offcanvas-start firstCanva" tabindex="-1" id="menuOffcanvas"
+            aria-labelledby="menuOffcanvasLabel">
             <div class="offcanvas-header">
+                <h5 id="menuOffcanvasLabel">Menu</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <!-- Default dropend button -->
                 <div class="btn-group dropend">
                     <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Home
                     </button>
                     <ul class="dropdown-menu p-4">
-                        <!-- Dropdown menu links -->
                         <li>Furniture 1</li>
                         <li>Furniture 1</li>
 
@@ -106,7 +87,6 @@
                         Shop
                     </button>
                     <ul class="dropdown-menu p-4">
-                        <!-- Dropdown menu links -->
                         <li>Furniture 1</li>
                         <li>Furniture 1</li>
 
@@ -118,7 +98,6 @@
                         Product
                     </button>
                     <ul class="dropdown-menu p-4">
-                        <!-- Dropdown menu links -->
                         <li>Furniture 1</li>
                         <li>Furniture 1</li>
 
@@ -130,7 +109,6 @@
                         Blog
                     </button>
                     <ul class="dropdown-menu p-4">
-                        <!-- Dropdown menu links -->
                         <li>Furniture 1</li>
                         <li>Furniture 1</li>
 
@@ -142,7 +120,6 @@
                         About Us
                     </button>
                     <ul class="dropdown-menu p-4">
-                        <!-- Dropdown menu links -->
                         <li>Furniture 1</li>
                         <li>Furniture 1</li>
 
@@ -154,7 +131,6 @@
                         Contact Us
                     </button>
                     <ul class="dropdown-menu p-4">
-                        <!-- Dropdown menu links -->
                         <li>Furniture 1</li>
                         <li>Furniture 1</li>
 
@@ -253,7 +229,7 @@
                     </div>
                     <div class="carousel-item item1 d-flex">
                         <img src="./pics/chairsmall.png" alt="chair" class="chairCategory d-block">
-                        <div class="shopByDescripp-4">
+                        <div class="shopByDescrip p-4">
                             <h4 class="interFont-bold-small">Chair</h4>
                             <p class="interFont-solight fs-6">5 products</p>
                         </div>
@@ -278,68 +254,8 @@
                 </div>
 
             </div>
-            <!-- <div class="owl-carousel ALLshopByItem mb-5">
-                <div class="item1">
-                    <img src="./pics/bedsmall.png" alt="bed" class="bedCategory d-block">
-                    <div class="shopByDescrip p-4">
-                        <h4 class="interFont-bold-small">Bed</h4>
-                        <p class="interFont-solight fs-6">7 products</p>
-                    </div>
-                </div>
-                <div class="item1">
-                    <img src="./pics/tablesmall.png" alt="table" class="tableCategory d-block">
-                    <div class="shopByDescrip p-4">
-                        <h4 class="interFont-bold-small">Table</h4>
-                        <p class="interFont-solight fs-6">7 products</p>
-                    </div>
-                </div>
-                <div class="item1"> <img src="./pics/chairsmall.png" alt="chair" class="chairCategory d-block">
-                    <div class="shopByDescripp-4">
-                        <h4 class="interFont-bold-small">Chair</h4>
-                        <p class="interFont-solight fs-6">5 products</p>
-                    </div>
-                </div>
-                <div class="item1"> <img src="./pics/lampsmall.png" alt="lamp" class="lampCategory d-block">
-                    <div class="shopByDescrip p-4">
-                        <h4 class="interFont-bold-small">Lamp</h4>
-                        <p class="interFont-solight fs-6">12 products</p>
-                    </div>
-                </div>
 
-            </div> -->
-
-            <!-- <h3 class="interFont-bold ms-4 ">Shop By Category</h3>
-        <div class="ALLshopByItem p-4 mb-5">
-            <div class="shopByItem ">
-                <img src="./pics/bedsmall.png" alt="">
-                <div class="shopByDescrip p-4">
-                    <h4 class="interFont-bold-small">Bed</h4>
-                    <p class="interFont-solight fs-6">7 products</p>
-                </div>
-            </div>
-            <div class="shopByItem">
-                <img src="./pics/lampsmall.png" alt="">
-                <div class="shopByDescrip p-4">
-                    <h4 class="interFont-bold-small">Lamp</h4>
-                    <p class="interFont-solight fs-6">7 products</p>
-                </div>
-            </div>
-            <div class="shopByItem">
-                <img src="./pics/chairsmall.png" alt="">
-                <div class="shopByDescrip p-4">
-                    <h4 class="interFont-bold-small ">Chair</h4>
-                    <p class="interFont-solight fs-6">12 products</p>
-                </div>
-            </div>
-            <div class="shopByItem">
-                <img src="./pics/tablesmall.png" alt="">
-                <div class="shopByDescrip p-4">
-                    <h4 class="interFont-bold-small">Table</h4>
-                    <p class="interFont-solight fs-6"> products</p>
-                </div>
-            </div>
-        </div> -->
-            <div class="offersPics ms-2">
+            <!-- <div class="offersPics ms-2">
                 <h3 class="interFont-medium-large ps-5 pt-5">Up to 40% Off <br>Top Lamp brands</h3>
                 <a href="#" class="interFont-light fw-bold ps-5 pt-5">Shop now</a>
                 <div class="lampleft ps-5">
@@ -349,8 +265,24 @@
                 <div class="yellowpicRight">
                     <img src="./pics/yellowpic.png" class="yellowpic">
                 </div>
+            </div> -->
+            <div class="offersPics gap-2 d-flex justify-items-center col-12" style="height: 100vh;">
+                <div class="offersLeft col-7 d-flex flex-wrap" style="height: 100vh;">
+                    <div class="offersLeftContent col-7 d-flex flex-column">
+                        <h3 class="interFont-medium-large ps-5 pt-5">Up to 40% Off Top Lamp brands</h3>
+                        <a href="#" class="interFont-light fw-bold ps-5 pt-2 mb-5">Shop now</a>
+                    </div>
+                    <img src="./pics/lampone.jpg" class="lampalone mt-5 pt-5">
+                    <div class="offersBottom ps-5 col-6">
+                        <img src="./pics/greenpic.png" class="greenpic">
+                    </div>
+                </div>
+               
+                <div class="offersRight col-4">
+                    <img src="./pics/yellowpic.png" class="yellowpic">
+                </div>
             </div>
-            <div class="orangeTitle">
+            <div class="orangeTitle mt-5">
                 <div class="orangeDescripTitle ">
                     <h1 class="interFont-bold-large">10%</h1>
                     <div class="orangeDescrip ms-3">
@@ -363,7 +295,7 @@
                     <img src="./pics/orangecouch.jpg" alt="" class="orangeCouch">
                 </div>
             </div>
-            <div class="allItems mt-5">
+            <!-- <div class="allItems mt-5">
                 <div class="allItemsDescription mt-5">
                     <h3 class="interFont-medium-large">Best Modern Furniture</h3>
                     <a href="#" class="roboto-main-light">See All >></a>
@@ -372,7 +304,6 @@
                     <span class="badge text ps-3 pe-3">Hot</span>
                     <span class="badge text-bg-dark ps-3 pe-3">Sale</span>
                     <div class="woodImg mb-5 mt-3 ">
-                        <!-- <img src="./pics/like.png" alt=""class="like mt-5 me-3" > -->
                         <div class="like mt-5 me-3"></div>
                         <div class="buttonContainer  w-100">
                             <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
@@ -388,7 +319,6 @@
                 <div class="cabinet m-3">
                     <div class="cabinetImg mt-5 mb-5">
                         <div class="like mt-5 me-3"></div>
-                        <!-- <img src="./pics/like.png" alt="" class="like mt-5 me-3"> -->
                         <div class="buttonContainer  w-100">
                             <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
                         </div>
@@ -399,7 +329,6 @@
                 <div class="bed m-3">
                     <div class="bedImg mt-5 mb-5">
                         <div class="like mt-5 me-3"></div>
-                        <!-- <img src="./pics/like.png" alt="" class="like  mt-5 me-3"> -->
                         <div class="buttonContainer  w-100">
                             <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
                         </div>
@@ -411,7 +340,6 @@
                     <span class="badge text-bg-secondary ps-3 pe-3">Sold Out</span>
                     <div class="lampImg mt-5 mb-5">
                         <div class="like mt-5 me-3"></div>
-                        <!-- <img src="./pics/like.png" alt="" class="like mt-5 me-3"> -->
                         <div class="buttonContainer  w-100">
                             <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
                         </div>
@@ -423,7 +351,6 @@
                     <span class="badge text ps-3 pe-3">Hot</span>
                     <div class="smallChairImg mt-5 mb-5">
                         <div class="like mt-5 me-3"></div>
-                        <!-- <img src="./pics/like.png" alt="" class="like mt-5 me-3"> -->
                         <div class="buttonContainer  w-100">
                             <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
                         </div>
@@ -435,7 +362,6 @@
                     <span class="badge text-bg-dark ps-3 pe-3">Sale</span>
                     <div class="bigLampImg mt-5 mb-5">
                         <div class="like mt-5 me-3"></div>
-                        <!-- <img src="./pics/like.png" alt="" class="like mt-5 me-3"> -->
                         <div class="buttonContainer  w-100">
                             <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
                         </div>
@@ -449,7 +375,6 @@
                 <div class="blackChair m-5">
                     <div class="blackChairImg mt-5 mb-5">
                         <div class="like mt-5 me-3"></div>
-                        <!-- <img src="./pics/like.png" alt="" class="like mt-5 me-3"> -->
                         <div class="buttonContainer  w-100">
                             <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
                         </div>
@@ -458,7 +383,165 @@
                     <p class="me-3 interFont-bold-small fs-6">$999</p>
                 </div>
 
-                <div class="Blog">
+               
+            </div> -->
+
+            <div class="allItems col-12 d-flex  justify-content-center align-items-center p-5 gap-4"
+                style="height: 100vh;">
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="allItemsDescription ">
+                        <h3 class="interFont-medium-large">Best Modern Furniture</h3>
+                        <a href="#" class="roboto-main-light">See All >></a>
+                    </div>
+                </div>
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="card m-4 col-12 d-flex flex-column justify-content-between" id="woodChair">
+                        <div class="badgeContainer d-flex ">
+                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                            <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
+                        </div>
+                        <div class="icon d-flex">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100 d-flex flex-column">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Wood Outdoor Adirondack Chair</h4>
+                        <div class="price p-2 d-flex">
+                            <p class="me-3 interFont-bold-small fs-6">$1,009</p><span
+                                class="interFont-solight-small fs-6 text-decoration-line-through">$1,259</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="card col-12 d-flex flex-column justify-content-between" id="cabinet">
+                        <div class="badgeContainer  ">
+                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                        </div>
+                        <div class="icon d-flex" id="icon2">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100 d-flex flex-column">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Solid Wood Bar Storage Cabinet</h4>
+                        <div class="price p-2 d-flex">
+                            <p class="me-3 interFont-bold-small fs-6">$1,889</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="card col-12 d-flex flex-column justify-content-between" id="bed">
+                        <div class="badgeContainer ">
+                            <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
+                        </div>
+                        <div class="icon d-flex">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Solid Wood Bed with Fabric Headboard</h4>
+                        <p class="me-3 interFont-bold-small fs-6">$3,707 - $5,707</p>
+                    </div>
+                </div>
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="card col-12 d-flex flex-column justify-content-between" id="lamp">
+                        <div class="badgeContainer d-flex ">
+                            <span class="badge text-bg-secondary ps-3 pe-3">Sold Out</span>
+                        </div>
+                        <div class="icon d-flex">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100 d-flex flex-column">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Floor Lamp with Polyester Shade</h4>
+                        <p class="me-3 interFont-bold-small fs-6">$399</p>
+                    </div>
+                </div>
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="card col-12 d-flex flex-column justify-content-between" id="brownCabin">
+                        <div class="badgeContainer d-flex">
+                            <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
+                        </div>
+                        <div class="icon d-flex">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Bar Cabinet With Integrated Lighting</h4>
+                        <div class="price p-2 d-flex">
+                            <p class="me-3 interFont-bold-small fs-6">$1,499</p><span
+                                class="text-decoration-line-through">$2,761</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="card col-12 d-flex flex-column justify-content-between" id="branchTable">
+                        <div class="badgeContainer d-flex">
+                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                        </div>
+                        <div class="icon d-flex">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Rectangular Wooden Garden Table</h4>
+                        <p class="me-3 interFont-bold-small fs-6">$2,199</p>
+
+                    </div>
+                </div>
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="card col-12 d-flex flex-column justify-content-between" id="whiteCouch">
+                        <div class="badgeContainer d-flex ">
+                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                        </div>
+                        <div class="icon d-flex">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100 d-flex flex-column">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Left-Arm Chaise Bumper</h4>
+                        <p class="me-3 interFont-bold-small fs-6">$1,349</p>
+                    </div>
+                </div>
+                <div class="Blog col-12 d-flex flex-column mb-5 " style="height: 100vh;">
                     <h3 class="interFont-bold fs-3 ms-4">Our Blog</h3>
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
@@ -492,32 +575,10 @@
                         </button>
                     </div>
                 </div>
-                <!-- <div class="elementor-element elementor-element-f0f4aa5 e-flex e-con-boxed e-con e-parent"
-                    data-id="f0f4aa5" data-element_type="container"
-                    data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/demo.theme-sky.com\/nooni\/wp-content\/uploads\/2023\/07\/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;content_width&quot;:&quot;boxed&quot;}"
-                    data-core-v316-plus="true">
-                    <div class="e-con-inner">
-                        <div class="elementor-background-video-container">
-                            <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted=""
-                                playsinline="" loop=""
-                                src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/07/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4"
-                                style="width: 1524.8px; height: 857.7px;"></video>
-                        </div>
-                        <div class="elementor-element elementor-element-6cf0026 elementor-widget elementor-widget-heading"
-                            data-id="6cf0026" data-element_type="widget" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-default"><a
-                                        href="https://demo.theme-sky.com/nooni/shop/?filter_material=wood">WOOD</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="videoContainer mt-5">
-                    <!-- <div class="video"> -->
+                <div class="videoContainer col-12 mt-5">
                     <video class="video " autoplay="" muted="" playsinline="" loop=""
                         src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/07/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4">
                     </video>
-                    <!-- </div> -->
                     <div class="overlay">
                     </div>
 
@@ -527,131 +588,157 @@
                     </div>
                 </div>
 
-            </div>
+                <div class="footer col-12 mt-5">
 
-            <div class="footer mt-5">
+                    <footer class=" text-center text-lg-start" style="background-color: #f1f1f1;">
+                        <div class="row mt-4">
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
 
-                <footer class=" text-center text-lg-start" style="background-color: #f1f1f1;">
-                    <div class="row mt-4">
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <div
+                                    class="logoFooter shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto">
+                                    <img src="./pics/logo.png" alt="" loading="lazy" class="mb-5" />
+                                    <p class="text-center">Text: +00(234)23-45-666</p>
+                                    <p class="text-center">Mon – Fri: 8 am – 8 pm</p>
+                                    <p class="text-center">Sat – Sun: 8 am – 7 pm </p>
+                                </div>
+                            </div>
 
-                            <div
-                                class="logoFooter shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto">
-                                <img src="./pics/logo.png" alt="" loading="lazy" class="mb-5" />
-                                <p class="text-center">Text: +00(234)23-45-666</p>
-                                <p class="text-center">Mon – Fri: 8 am – 8 pm</p>
-                                <p class="text-center">Sat – Sun: 8 am – 7 pm </p>
+                            <div class="footer1 col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 class="text-uppercase mb-4 interFont-bold  fs-6">about</h5>
+
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" class="footerLink text-black interFont-solight-small ">Our
+                                            Story</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="footerLink text-black interFont-solight-small ">Careers</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#"
+                                            class=" footerLink text-black interFont-solight-small ">Influencers</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="footerLink text-black interFont-solight-small ">Join
+                                            our team</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 class="text-uppercase mb-4 interFont-bold fs-6">Customer Services</h5>
+
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#!" class=" footerLink text-black interFont-solight-small ">Contact
+                                            Us</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#!" class="footerLink text-black interFont-solight-small ">Customer
+                                            Service</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#!" class="footerLink text-black interFont-solight-small ">Find
+                                            Store</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#!" class="footerLink text-black interFont-solight-small ">Book
+                                            appointment</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#!" class="footerLink text-black interFont-solight-small ">Shipping &
+                                            Returns</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class=" signUp col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 class="text-uppercase mb-4 interFont-bold fs-6">SIGN UP FOR EMAILS</h5>
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <p><i class="fas fa-map-marker-alt pe-1 interFont-solight-small "></i>Enjoy 15%
+                                            off*
+                                            your first order
+                                            when sign up to our newsletter</p>
+                                    </li>
+                                    <li>
+                                        <input type="email" placeholder="Your email address">
+                                        <button type="button"
+                                            class="subscribeButton bg-black text-white ms-4 ps-4 pe-4 pt-2 pb-2 interFont-bold-small border-0">SUBSCRIBE</button>
+                                    </li>
+                                </ul>
+                                <div class="socialMedia ">
+                                    <button type="button" class="btn m-2">
+                                        <i class="bi bi-facebook"></i>
+                                    </button>
+                                    <button type="button" class="btn m-2">
+                                        <i class="bi bi-twitter"></i>
+                                    </button>
+                                    <button type="button" class="btn m-2">
+                                        <i class="bi bi-instagram"></i>
+                                    </button>
+                                    <button type="button" class="btn m-2">
+                                        <i class="bi bi-pinterest"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class=" copyrightContainer border-top text-center p-3 border-black ">
+                            <div class="linkFooter">
+                                <a href="#" class="p-2">Privacy Policy</a>
+                                <a href="#" class="p-2">Help</a>
+                                <a href="#" class="p-2">FAQs</a>
+                            </div>
+                            <p>
+                                © Nooni. All Rights Reserved.
+                            </p>
+                            <div class="payFooter">
+                                <img src="./pics/ca.png" alt="">
                             </div>
                         </div>
+                    </footer>
 
-                        <div class="footer1 col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-uppercase mb-4 interFont-bold ">about</h5>
-
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <a href="#" class="footerLink text-black interFont-solight-small ">Our
-                                        Story</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#" class="footerLink text-black interFont-solight-small ">Careers</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#" class=" footerLink text-black interFont-solight-small ">Influencers</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#" class="footerLink text-black interFont-solight-small ">Join
-                                        our team</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-uppercase mb-4 interFont-bold">Customer Services</h5>
-
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <a href="#!" class=" footerLink text-black interFont-solight-small ">Contact
-                                        Us</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="footerLink text-black interFont-solight-small ">Customer
-                                        Service</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="footerLink text-black interFont-solight-small ">Find
-                                        Store</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="footerLink text-black interFont-solight-small ">Book
-                                        appointment</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="footerLink text-black interFont-solight-small ">Shipping &
-                                        Returns</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class=" signUp col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-uppercase mb-4 interFont-bold">SIGN UP FOR EMAILS</h5>
-
-                            <ul class="list-unstyled">
-                                <li>
-                                    <p><i class="fas fa-map-marker-alt pe-1 interFont-solight-small "></i>Enjoy 15% off*
-                                        your first order
-                                        when sign up to our newsletter</p>
-                                </li>
-                                <li>
-                                    <input type="email" placeholder="Your email address">
-                                    <button type="button"
-                                        class="subscribeButton bg-black text-white ms-4 ps-4 pe-4 pt-2 pb-2 interFont-bold-small border-0">SUBSCRIBE</button>
-                                </li>
-                            </ul>
-                            <div class="socialMedia ">
-                                <button type="button" class="btn m-2">
-                                    <i class="bi bi-facebook"></i>
-                                </button>
-                                <button type="button" class="btn m-2">
-                                    <i class="bi bi-twitter"></i>
-                                </button>
-                                <button type="button" class="btn m-2">
-                                    <i class="bi bi-instagram"></i>
-                                </button>
-                                <button type="button" class="btn m-2">
-                                    <i class="bi bi-pinterest"></i>
-                                </button>
-                            </div>
-                        </div>
-                   
-                    </div>
-                  
-
-                    <div class=" copyrightContainer border-top text-center p-3 border-black ">
-                        <div class="linkFooter">
-                            <a href="#" class="p-2">Privacy Policy</a>
-                            <a href="#" class="p-2">Help</a>
-                            <a href="#" class="p-2">FAQs</a>
-                        </div>
-                        <p>
-                            © Nooni. All Rights Reserved.
-                        </p>
-                        <div class="payFooter">
-                            <img src="./pics/ca.png" alt="">
-                        </div>
-                    </div>
-                </footer>
+                </div>
 
             </div>
 
 
-    </container>
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
+
+            <!-- <div class="elementor-element elementor-element-f0f4aa5 e-flex e-con-boxed e-con e-parent"
+                data-id="f0f4aa5" data-element_type="container"
+                data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/demo.theme-sky.com\/nooni\/wp-content\/uploads\/2023\/07\/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;content_width&quot;:&quot;boxed&quot;}"
+                data-core-v316-plus="true">
+                <div class="e-con-inner">
+                    <div class="elementor-background-video-container">
+                        <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted=""
+                            playsinline="" loop=""
+                            src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/07/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4"
+                            style="width: 1524.8px; height: 857.7px;"></video>
+                    </div>
+                    <div class="elementor-element elementor-element-6cf0026 elementor-widget elementor-widget-heading"
+                        data-id="6cf0026" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <h2 class="elementor-heading-title elementor-size-default"><a
+                                    href="https://demo.theme-sky.com/nooni/shop/?filter_material=wood">WOOD</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+        </div>
+        <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
