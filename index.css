@@ -142,13 +142,13 @@ body {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     border-bottom: solid 1px rgba(206, 206, 206, 0.885);
 }
 
 .navbar {
-    position: sticky;
+    position: fixed;
     z-index: 6;
     top: 0;
     display: flex;

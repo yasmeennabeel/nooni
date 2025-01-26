@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.interFont-solight {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+
+}
+
+.interFont-solight-small {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    font-size: 17px;
+}
+
+.interFont-light {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-transform: uppercase;
+}
+
+.interFont-medium {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 70px;
+    color: black;
+    letter-spacing: 8px;
+
+}
+
+.interFont-medium-large {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 90px;
+    color: black;
+    letter-spacing: 8px;
+}
+
+.interFont-bold {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: black;
+}
+
+.interFont-bold-small {
+    font-family: "Inter", serif;
+    font-weight: 650;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: black;
+}
+.interFont-bold-large{
+    font-family: "Inter", serif;
+    font-weight: 650;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 90px;
+    color: black;
+    letter-spacing: 19px;
+
+}
+
+.interFont-medium-large {
+    font-family: "Inter", serif;
+    font-weight: 450;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: black;
+    letter-spacing: 10px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+
+}
+
+.blackBan {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    /* justify-content: space-between; */
+}
+
+.blackBan a {
+    color: white;
+}
+.blackBan a:hover{
+color: rgb(160, 160, 160);
+}
+
+.roboto-main-light {
+    font-family: "Roboto", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.buttonsLang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    border-bottom: solid 1px rgba(206, 206, 206, 0.885);
+}
+
+.navbar {
+    position: sticky;
+    z-index: 6;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.885);
+}
+
+.logoNav img {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+}
+
+.searchIcon {
+    width: 70px;
+}
+
+
+.container-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.userLogo,
+.favLogo,
+.cartLogo {
+    width: 30px;
+}
+.offcanvas-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.offcanvas-body-2 input {
+    width: 70%;
+}
+
+.offcanvas-body-2 img {
+    width: 30px;
+}
+
+.offcanvas-body-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.breadcrumb{
+    display: flex;
+    justify-content: center;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+    color: rgba(16, 16, 16, 0.792);
+}
+.breadcrumb li:hover{
+    color: rgba(209, 2, 2, 1);
+    text-decoration: underline;
+}
+.breadcrumb a:hover{
+    color: rgba(209, 2, 2, 1);
+    text-decoration: underline;
+}
+
+#slide1{
+    background-image: url('./pics/woodenchair.jpg') !important; 
+    background-size: contain !important;
+    border-radius: 0 !important;
+    height: 5rem !important;
+    width: 5rem !important;
+}
+#slide2{
+    background-image: url('./pics/woodenchairwesh.jpg')!important ;
+    background-size: contain !important;
+    border-radius: 0 !important;
+    height: 5rem !important;
+    width: 5rem !important;
+}
+#slide3{
+    background-image: url("./pics/woodenchairgamb.jpg") !important;
+    background-size: contain !important;
+    border-radius: 0 !important;
+    height: 5rem !important;
+    width: 5rem !important;
+}
+#slide4{
+    background-image: url('./pics/woodenchairdahr.jpg') !important;
+    background-size: contain !important;
+    border-radius: 0 !important;
+    height: 5rem !important;
+    width: 5rem !important;
+}
+.carousel-item img{
+    width: 100% !important;
+    height: 90vh !important;
+}
+/* #carouselExampleIndicators{
+    width: 800px !important;
+    height: 90vh !important;
+} */
+
+.badge {
+    background-color: rgba(209, 2, 2, 1);
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+  .countdown-timer {
+    font-family: Arial, sans-serif;
+    display: flex;
+    gap: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .countdown-timer span {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #333;
+    text-align: center;
+  }
+  .colorOptions img{
+    border: 4px solid rgb(218, 215, 215);
+    
+  }
+  .colorOptions img:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+    transform: translateX(2px);
+    border: 6px solid rgb(67, 63, 63);
+
+  }
+
+  .quantity-counter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: Arial, sans-serif;
+  }
+
+  .quantity-counter button {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+
+  .quantity-counter button:hover {
+    background-color: #ddd;
+  }
+
+  .quantity-input {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  .addCart:hover{
+    background-color: black !important;
+    border: 3px solid grey !important;
+    color: white !important;
+  }
+  .buyNow:hover{
+    background-color: black !important;
+    border: 3px solid grey !important;
+    color: white !important;
+  }
+  .wish img{
+    width: 30px;
+  }
+  /* .wish h6{
+    line-height: 2rem;
+  } */
+  .wish:hover img{
+    color: rgba(209, 2, 2, 1);
+    cursor: pointer;
+  }
+  .wish:hover h6{
+    color: rgba(209, 2, 2, 1);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .socialMedia i:hover {
+    color: rgba(209, 2, 2, 1);
+}
+.model span:hover{
+    color: rgba(209, 2, 2, 1);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.model span{
+    color: gray;
+}
