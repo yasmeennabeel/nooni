@@ -338,6 +338,9 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
 }
+.offcanvas button:hover{
+    cursor: pointer;
+}
 .lampalone {
     width: 180px;
     transition: ease all 500ms;

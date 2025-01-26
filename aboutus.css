@@ -160,59 +160,31 @@ color: rgb(160, 160, 160);
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
-     width: 100%;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-
+    border-bottom: solid 1px rgba(206, 206, 206, 0.885);
 }
 
 .navbar {
-    position: sticky;
+    position: fixed;
     z-index: 6;
     top: 0;
     display: flex;
-    width: 100%;
-    height: 15vh;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.885);
 }
 
-.logoNav {
+.logoNav img {
     display: flex;
     justify-content: center;
-    width: 100%;
-}
-
-.logo {
-        display: block;
-        margin: 0 auto;
-    
-}
-
-/* .buttonLang{
-    display: flex;
-    justify-content: right;
-}
-.buttonLang li {
-    color: black;
-} */
-
-.searchIcon {
-    width: 30px;
-}
-
-.logo {
     width: 180px;
 }
 
-.navbarcontent {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; */
+.searchIcon {
+    width: 70px;
 }
 
 .userLogo,
@@ -299,8 +271,11 @@ nav {
     width: 100%;
 }
 .howWork img{
-    max-width: 50%;
-    height: auto;    
+    width: 100%; 
+    max-width: 50vw; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
 }
 .howWork img:hover{
     transition: ease all 500ms;
@@ -440,6 +415,10 @@ img {
     
     .titleContent, .howWorkContent, .footer {
         padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .teamSection{
         display: flex;
