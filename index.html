@@ -13,55 +13,32 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="blackBan bg-black roboto-main-light pt-2 ps-5">
-            <p>
-                Up to 40% off Best-Selling Furniture. <a href="#">SHOP NOW</a>
-            </p>
-            <!-- <div class="buttonsLang">
-                <div class="language">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        English
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">English</a></li>
-                        <li><a class="dropdown-item" href="#">Arabic</a></li>
-                        <li><a class="dropdown-item" href="#">French</a></li>
-                    </ul>
-                </div>
-                <div class="currency">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        EGP
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">EGP</a></li>
-                        <li><a class="dropdown-item" href="#">CAD</a></li>
-                        <li><a class="dropdown-item" href="#">USD</a></li>
-                    </ul>
-                </div>
-            </div> -->
+    <div class="blackBan bg-black roboto-main-light pt-2 ps-5">
+        <p>
+            Up to 40% off Best-Selling Furniture. <a href="#">SHOP NOW</a>
+        </p>
+
+    </div>
+
+    <nav class="navbar d-flex col-12">
+        <div class="menu-icon d-flex gap-3" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
+            <i class="bi bi-list"></i>
+            <div class="menu-icon searchIcon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1">
+                <i class="bi bi-search"></i>
+            </div>
         </div>
 
-        <nav class="navbar d-flex col-12">
-            <div class="menu-icon d-flex gap-3" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
-                <i class="bi bi-list"></i>
-                <div class="menu-icon searchIcon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1">
-                    <i class="bi bi-search"></i>
-                </div>
-            </div>
+        <div class="logoNav">
+            <img src="./pics/logo.png" />
+        </div>
+        <div class="userActions ">
+            <img src="./pics/person_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" class="userLogo">
+            <img src="./pics/favorite_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="fav" class="favLogo">
+            <img src="./pics/shopping_cart_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="cart" class="cartLogo">
+        </div>
+    </nav>
+    <div class="container">
 
-            <div class="logoNav">
-                <img src="./pics/logo.png" />
-            </div>
-            <div class="userActions ">
-                <img src="./pics/person_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" class="userLogo">
-                <img src="./pics/favorite_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="fav" class="favLogo">
-                <img src="./pics/shopping_cart_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="cart"
-                    class="cartLogo">
-            </div>
-        </nav>
 
         <div class="offcanvas offcanvasLeft offcanvas-start firstCanva" tabindex="-1" id="menuOffcanvas"
             aria-labelledby="menuOffcanvasLabel">
@@ -165,580 +142,536 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner itemBig ps-5">
-                <div class="carousel-item active item1Big">
-                    <h5 class="newArrive interFont-solight">NEW ARRIVALS</h5>
-                    <h1 class="titleCarousel interFont-medium">Chairs & Seatings <br>You'll Love</h1>
-                    <p class="contentCarousel interFont-light">Designer chair styles for every space - <span
-                            class="fw-bold">Free shipping</span></p>
-                    <a href="#" class="shopCarousel interFont-light fw-bold"> SHOP NOW</a>
-                    <img src="./pics/chair.png" class="carouselImg " alt="...">
+                <div class="carousel-item active">
+                    <div class="row ">
+                        <div class="col-12 col-md-6 d-flex flex-column justify-content-center mt-5">
+                            <h5 class="newArrive interFont-solight">NEW ARRIVALS</h5>
+                            <h1 class="titleCarousel interFont-medium">Chairs & Seatings <br>You'll Love</h1>
+                            <p class="contentCarousel interFont-light">Designer chair styles for every space - <span
+                                    class="fw-bold">Free shipping</span></p>
+                            <a href="#" class="shopCarousel interFont-light fw-bold"> SHOP NOW</a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="./pics/chair.png" class="w-100 " alt="...">
+                        </div>
+                    </div>
+                              
                 </div>
-                <div class="carousel-item item1Big">
-                    <h5 class="newArrive interFont-solight">SALE OFF 30%</h5>
-                    <h1 class="titleCarousel interFont-medium">Lamps & Lighting <br>Great Low Prices</h1>
-                    <p class="contentCarousel interFont-light">Fee Standard shipping <span class="fw-bold">with
-                            35$</span></p>
-                    <a href="#" class="shopCarousel interFont-light fw-bold"> SHOP NOW</a>
-                    <img src="./pics/lamp.png" class="carouselImg " alt="...">
+                <div class="carousel-item ">
+                    <div class="row ">
+                        <div class="col-12 col-md-6 d-flex flex-column justify-content-center mt-5">
+                            <h5 class="newArrive interFont-solight">SALE OFF 30%</h5>
+                            <h1 class="titleCarousel interFont-medium">Lamps & Lighting <br>Great Low Prices</h1>
+                            <p class="contentCarousel interFont-light">Fee Standard shipping <span class="fw-bold">with
+                                    35$</span></p>
+                            <a href="#" class="shopCarousel interFont-light fw-bold"> SHOP NOW</a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="./pics/lamp.png" class="w-100 " alt="...">
+                        </div>
+                    </div>
+                              
                 </div>
-                <div class="carousel-item item1Big">
-                    <h5 class="newArrive interFont-solight">SALE OFF 25%</h5>
-                    <h1 class="titleCarousel  interFont-medium">Discover Living <br>Room Tables</h1>
-                    <p class="contentCarousel interFont-light">Fee Standard shipping <span class="fw-bold">with
-                            45$</span></p>
-                    <a href="" class="shopCarousel interFont-light fw-bold"> SHOP NOW</a>
-                    <img src="./pics/table.png" class="carouselImg" alt="...">
+                <div class="carousel-item ">
+                    <div class="row ">
+                        <div class="col-12 col-md-6 d-flex flex-column justify-content-center mt-5">
+                            <h5 class="newArrive interFont-solight">SALE OFF 25%</h5>
+                            <h1 class="titleCarousel interFont-medium">Discover Living <br>Room Tables</h1>
+                            <p class="contentCarousel interFont-light">Fee Standard shipping <span class="fw-bold">with
+                                    45$</span></p>
+                            <a href="#" class="shopCarousel interFont-light fw-bold"> SHOP NOW</a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="./pics/table.png" class="w-100 " alt="...">
+                        </div>
+                    </div>
+                              
+                </div>
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-center mb-5">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="category-item d-flex flex-wrap align-items-center gap-4">
+                    <img src="./pics/bedsmall.png" alt="bed" class="category-image d-block rounded-circle w-50" />
+                    <div class="">
+                        <h4 class="interFont-bold-small">Bed</h4>
+                        <p class="interFont-solight fs-6">7 products</p>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <h3 class="interFont-bold ms-4 ">Shop By Category</h3>
-        <div class="ALLshopByItem p-4 mb-5">
-            <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="category-item d-flex flex-wrap align-items-center gap-4">
+                    <img src="./pics/tablesmall.png" alt="bed" class="category-image d-block rounded-circle w-50" />
+                    <div class="">
+                        <h4 class="interFont-bold-small">Table</h4>
+                        <p class="interFont-solight fs-6">5 products</p>
+                    </div>
                 </div>
-                <div class="carousel-inner shopItem">
-                    <div class="carousel-item item1 active d-flex ">
-                        <img src="./pics/bedsmall.png" alt="bed" class="bedCategory d-block">
-                        <div class="shopByDescrip p-4">
-                            <h4 class="interFont-bold-small">Bed</h4>
-                            <p class="interFont-solight fs-6">7 products</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="category-item d-flex flex-wrap align-items-center gap-4">
+                    <img src="./pics/chairsmall.png" alt="bed" class="category-image d-block rounded-circle w-50" />
+                    <div class="">
+                        <h4 class="interFont-bold-small">Chair</h4>
+                        <p class="interFont-solight fs-6">8 products</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="category-item d-flex flex-wrap align-items-center gap-4">
+                    <img src="./pics/lampsmall.png" alt="bed" class="category-image d-block rounded-circle w-50" />
+                    <div class="">
+                        <h4 class="interFont-bold-small">Lamp</h4>
+                        <p class="interFont-solight fs-6">10 products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-3 row">
+            <div class="col-12 col-md-6">
+                <div class="left position-relative">
+                    <div class="leftContent">
+                        <div class="ms-4">
+                            <div class="col-12 col-md-6 ">
+                                <h2 class="interFont-medium-large">Up to 40% Off Top Lamp brands</h2>
+                            </div>
+                            <a href="#" class="interFont-light fw-bold">Shop Now</a>
+                        </div>
+                        <div class="imageContainer">
+                            <img class="lampImage d-block col-5 ms-auto" src="./pics/lampone.jpg" alt="Lamp">
                         </div>
                     </div>
-                    <div class="carousel-item item1 d-flex">
-                        <img src="./pics/tablesmall.png" alt="table" class="tableCategory d-block">
-                        <div class="shopByDescrip p-4">
-                            <h4 class="interFont-bold-small">Table</h4>
-                            <p class="interFont-solight fs-6">7 products</p>
+
+                    <div class="imageContainer d-flex ">
+                        <img class="greenImage animatedImage w-100 " src="./pics/greenpic.png" alt="Green Lamp">
+                        <div class="innerBorder"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="right">
+                    <div class="imageContainer">
+                        <img class="yellowImage animatedImage w-100" src="./pics/yellowpic.png" alt="Yellow Lamp">
+                        <div class="innerBorder"></div>
+                    </div>
+                </div>
+            </div>
+                      
+        </div>
+        <div class="orangeTitle mt-5">
+            <div class="orangeDescripTitle ">
+                <h1 class="interFont-bold-large">10%</h1>
+                <div class="orangeDescrip ms-3">
+                    <h3 class="interFont-medium-large fs-2">Get more pay less</h3>
+                    <p class="interFont-solight">On orders above $500+ Use code: <span class="fw-bold">WSD10</span>
+                    </p>
+                </div>
+            </div>
+            <div class="orangepic ms-2 mt-5">
+                <img src="./pics/orangecouch.jpg" alt="" class="orangeCouch">
+            </div>
+        </div>
+
+        <div class="allItems col-12 d-flex  justify-content-center align-items-center p-5 gap-4">
+            <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                <div class="allItemsDescription ">
+                    <h3 class="interFont-medium-large">Best Modern Furniture</h3>
+                    <a href="#" class="roboto-main-light">See All >></a>
+                </div>
+            </div>
+            <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                <div class="card m-4 col-12 d-flex flex-column justify-content-between" id="woodChair">
+                    <div class="badgeContainer d-flex ">
+                        <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                        <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
+                    </div>
+                    <div class="icon d-flex">
+                        <p class="p-2 interDescrip fs-6">Wishlist</p>
+                        <div class="like p-2 ms-2 mb-3"></div>
+                    </div>
+                    <div class="buttonContainer  w-100 d-flex flex-column">
+                        <button type="button" class="button border-0 interFont-bold-small">Select
+                            Options</button>
+                    </div>
+                </div>
+                <div class="cardTitle d-flex flex-column p-2">
+                    <h4 class="interFont-solight-small">Wood Outdoor Adirondack Chair</h4>
+                    <div class="price p-2 d-flex">
+                        <p class="me-3 interFont-bold-small fs-6">$1,009</p><span
+                            class="interFont-solight-small fs-6 text-decoration-line-through">$1,259</span>
+                    </div>
+                </div>
+            </div>
+            <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                <div class="card col-12 d-flex flex-column justify-content-between" id="cabinet">
+                    <div class="badgeContainer  ">
+                        <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                    </div>
+                    <div class="icon d-flex" id="icon2">
+                        <p class="p-2 interDescrip fs-6">Wishlist</p>
+                        <div class="like p-2 ms-2 mb-3"></div>
+                    </div>
+                    <div class="buttonContainer  w-100 d-flex flex-column">
+                        <button type="button" class="button border-0 interFont-bold-small">Select
+                            Options</button>
+                    </div>
+                </div>
+                <div class="cardTitle d-flex flex-column p-2">
+                    <h4 class="interFont-solight-small">Solid Wood Bar Storage Cabinet</h4>
+                    <div class="price p-2 d-flex">
+                        <p class="me-3 interFont-bold-small fs-6">$1,889</p>
+                    </div>
+                </div>
+            </div>
+            <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                <div class="card col-12 d-flex flex-column justify-content-between" id="bed">
+                    <div class="badgeContainer ">
+                        <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
+                    </div>
+                    <div class="icon d-flex">
+                        <p class="p-2 interDescrip fs-6">Wishlist</p>
+                        <div class="like p-2 ms-2 mb-3"></div>
+                    </div>
+                    <div class="buttonContainer  w-100">
+                        <button type="button" class="button border-0 interFont-bold-small">Select
+                            Options</button>
+                    </div>
+
+                </div>
+                <div class="cardTitle d-flex flex-column p-2">
+                    <h4 class="interFont-solight-small">Solid Wood Bed with Fabric Headboard</h4>
+                    <p class="me-3 interFont-bold-small fs-6">$3,707 - $5,707</p>
+                </div>
+            </div>
+            <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                <div class="card col-12 d-flex flex-column justify-content-between" id="lamp">
+                    <div class="badgeContainer d-flex ">
+                        <span class="badge text-bg-secondary ps-3 pe-3">Sold Out</span>
+                    </div>
+                    <div class="icon d-flex">
+                        <p class="p-2 interDescrip fs-6">Wishlist</p>
+                        <div class="like p-2 ms-2 mb-3"></div>
+                    </div>
+                    <div class="buttonContainer  w-100 d-flex flex-column">
+                        <button type="button" class="button border-0 interFont-bold-small">Select
+                            Options</button>
+                    </div>
+                </div>
+                <div class="cardTitle d-flex flex-column p-2">
+                    <h4 class="interFont-solight-small">Floor Lamp with Polyester Shade</h4>
+                    <p class="me-3 interFont-bold-small fs-6">$399</p>
+                </div>
+            </div>
+            <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                <div class="card col-12 d-flex flex-column justify-content-between" id="brownCabin">
+                    <div class="badgeContainer d-flex">
+                        <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
+                    </div>
+                    <div class="icon d-flex">
+                        <p class="p-2 interDescrip fs-6">Wishlist</p>
+                        <div class="like p-2 ms-2 mb-3"></div>
+                    </div>
+                    <div class="buttonContainer  w-100">
+                        <button type="button" class="button border-0 interFont-bold-small">Select
+                            Options</button>
+                    </div>
+
+                </div>
+                <div class="cardTitle d-flex flex-column p-2">
+                    <h4 class="interFont-solight-small">Bar Cabinet With Integrated Lighting</h4>
+                    <div class="price p-2 d-flex">
+                        <p class="me-3 interFont-bold-small fs-6">$1,499</p><span
+                            class="text-decoration-line-through">$2,761</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                <div class="card col-12 d-flex flex-column justify-content-between" id="branchTable">
+                    <div class="badgeContainer d-flex">
+                        <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                    </div>
+                    <div class="icon d-flex">
+                        <p class="p-2 interDescrip fs-6">Wishlist</p>
+                        <div class="like p-2 ms-2 mb-3"></div>
+                    </div>
+                    <div class="buttonContainer  w-100">
+                        <button type="button" class="button border-0 interFont-bold-small">Select
+                            Options</button>
+                    </div>
+
+                </div>
+                <div class="cardTitle d-flex flex-column p-2">
+                    <h4 class="interFont-solight-small">Rectangular Wooden Garden Table</h4>
+                    <p class="me-3 interFont-bold-small fs-6">$2,199</p>
+
+                </div>
+            </div>
+            <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                <div class="card col-12 d-flex flex-column justify-content-between" id="whiteCouch">
+                    <div class="badgeContainer d-flex ">
+                        <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                    </div>
+                    <div class="icon d-flex">
+                        <p class="p-2 interDescrip fs-6">Wishlist</p>
+                        <div class="like p-2 ms-2 mb-3"></div>
+                    </div>
+                    <div class="buttonContainer  w-100 d-flex flex-column">
+                        <button type="button" class="button border-0 interFont-bold-small">Select
+                            Options</button>
+                    </div>
+                </div>
+                <div class="cardTitle d-flex flex-column p-2">
+                    <h4 class="interFont-solight-small">Left-Arm Chaise Bumper</h4>
+                    <p class="me-3 interFont-bold-small fs-6">$1,349</p>
+                </div>
+            </div>
+            <div class="cardContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                <div class="card col-12 d-flex flex-column justify-content-between" id="blackChair">
+                    <div class="badgeContainer d-flex ">
+                        <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                        <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
+                    </div>
+                    <div class="icon d-flex">
+                        <p class="p-2 interDescrip fs-6">Wishlist</p>
+                        <div class="like p-2 ms-2 mb-3"></div>
+                    </div>
+                    <div class="buttonContainer  w-100 d-flex flex-column">
+                        <button type="button" class="button border-0 interFont-bold-small">Select
+                            Options</button>
+                    </div>
+                </div>
+                <div class="cardTitle d-flex flex-column p-2">
+                    <h4 class="interFont-solight-small">Wood Outdoor Adirondack Chair</h4>
+                    <div class="price p-2 d-flex">
+                        <p class="me-3 interFont-bold-small fs-6">$1,009</p><span
+                            class="interFont-solight-small fs-6 text-decoration-line-through">$1,259</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Blog col-12 d-flex flex-column mb-5 ">
+            <h3 class="interFont-bold fs-3 ms-4">Our Blog</h3>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row item1">
+                            <div class="overlay">
+                            </div>
+                            <img src="./pics/couch.jpg" class=" carouselBackground d-block w-100" alt="...">
+                            <div class=" carouselWords col-12 col-md-6 text-center ">
+                                <a href="#" class="text-decoration-none text-white">Furniture, Table </a>
+                                <h4 class="text-capitalize">the secrets to a living room that draws you in</h4>
+                                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+                                    unde iusto
+                                    neque
+                                    ea veniam nemo ab, repellat accusamus soluta obcaecati voluptates!</p>
+                                <a href="#" class="text-decoration-none text-white"> Read More</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- <div class="carousel-item " style="height: 100vh;">
+                        <div class="row  d-flex flex-column align-items-center justify-items-center text-center ">
+                            <div class=" carouselWords col-12 col-md-6 ">
+                                <a href="#" class="text-decoration-none text-black">Furniture, Table </a>
+                                <h4 class="text-capitalize">the secrets to a living room that draws you in</h4>
+                                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque unde iusto
+                                    neque
+                                    ea veniam nemo ab, repellat accusamus soluta obcaecati voluptates!</p>
+                                <a href="#" class="text-decoration-none text-black"> Read More</a>
+                            </div>
+                                      
+                        </div>
+                    </div> -->
+
+
+                    <div class="carousel-item ">
+                        <div class="row item2">
+                            <div class="overlay">
+                            </div>
+                            <img src="./pics/backgroundchair.jpg" class="carouselBackground d-block w-100" alt="...">
+                            <div class=" carouselWords col-12 col-md-6 text-center">
+                                <a href="#" class="text-decoration-none text-white">Furniture, Table </a>
+                                <h4 class="text-capitalize">the secrets to a living room that draws you in</h4>
+                                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+                                    unde iusto
+                                    neque
+                                    ea veniam nemo ab, repellat accusamus soluta obcaecati voluptates!</p>
+                                <a href="#" class="text-decoration-none text-white"> Read More</a>
+
+                            </div>
+
                         </div>
                     </div>
-                    <div class="carousel-item item1 d-flex">
-                        <img src="./pics/chairsmall.png" alt="chair" class="chairCategory d-block">
-                        <div class="shopByDescrip p-4">
-                            <h4 class="interFont-bold-small">Chair</h4>
-                            <p class="interFont-solight fs-6">5 products</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item item1 d-flex">
-                        <img src="./pics/lampsmall.png" alt="lamp" class="lampCategory d-block">
-                        <div class="shopByDescrip p-4">
-                            <h4 class="interFont-bold-small">Lamp</h4>
-                            <p class="interFont-solight fs-6">12 products</p>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
+            </div>
+        </div>
+        <div class="videoContainer col-12 col-md-6 w-100">
+            <video class="video " autoplay="" muted="" playsinline="" loop=""
+                src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/07/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4">
+            </video>
+            <div class="overlay">
             </div>
 
-            <!-- <div class="offersPics ms-2">
-                <h3 class="interFont-medium-large ps-5 pt-5">Up to 40% Off <br>Top Lamp brands</h3>
-                <a href="#" class="interFont-light fw-bold ps-5 pt-5">Shop now</a>
-                <div class="lampleft ps-5">
-                    <img src="./pics/lampone.jpg" class="lampalone">
-                    <img src="./pics/greenpic.png" class="greenpic">
-                </div>
-                <div class="yellowpicRight">
-                    <img src="./pics/yellowpic.png" class="yellowpic">
-                </div>
-            </div> -->
-            <div class="offersPics gap-2 d-flex justify-items-center col-12" style="height: 100vh;">
-                <div class="offersLeft col-7 d-flex flex-wrap" style="height: 100vh;">
-                    <div class="offersLeftContent col-7 d-flex flex-column">
-                        <h3 class="interFont-medium-large ps-5 pt-5">Up to 40% Off Top Lamp brands</h3>
-                        <a href="#" class="interFont-light fw-bold ps-5 pt-2 mb-5">Shop now</a>
-                    </div>
-                    <img src="./pics/lampone.jpg" class="lampalone mt-5 pt-5">
-                    <div class="offersBottom ps-5 col-6">
-                        <img src="./pics/greenpic.png" class="greenpic">
-                    </div>
-                </div>
-               
-                <div class="offersRight col-4">
-                    <img src="./pics/yellowpic.png" class="yellowpic">
-                </div>
+            <div class="titleVideo">
+                <h2 class="title interFont-bold-large"><a
+                        href="https://demo.theme-sky.com/nooni/shop/?filter_material=wood">WOOD</a></h2>
             </div>
-            <div class="orangeTitle mt-5">
-                <div class="orangeDescripTitle ">
-                    <h1 class="interFont-bold-large">10%</h1>
-                    <div class="orangeDescrip ms-3">
-                        <h3 class="interFont-medium-large fs-2">Get more pay less</h3>
-                        <p class="interFont-solight">On orders above $500+ Use code: <span class="fw-bold">WSD10</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="orangepic ms-2 mt-5">
-                    <img src="./pics/orangecouch.jpg" alt="" class="orangeCouch">
-                </div>
-            </div>
-            <!-- <div class="allItems mt-5">
-                <div class="allItemsDescription mt-5">
-                    <h3 class="interFont-medium-large">Best Modern Furniture</h3>
-                    <a href="#" class="roboto-main-light">See All >></a>
-                </div>
-                <div class="woodChair m-4 ">
-                    <span class="badge text ps-3 pe-3">Hot</span>
-                    <span class="badge text-bg-dark ps-3 pe-3">Sale</span>
-                    <div class="woodImg mb-5 mt-3 ">
-                        <div class="like mt-5 me-3"></div>
-                        <div class="buttonContainer  w-100">
-                            <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
+        </div>
+
+        <div class="footer col-12 mt-5">
+
+            <footer class=" text-center text-lg-start" style="background-color: #f1f1f1;">
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                        <div
+                            class="logoFooter shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto">
+                            <img src="./pics/logo.png" alt="" loading="lazy" class="mb-5" />
+                            <p class="text-center">Text: +00(234)23-45-666</p>
+                            <p class="text-center">Mon – Fri: 8 am – 8 pm</p>
+                            <p class="text-center">Sat – Sun: 8 am – 7 pm </p>
                         </div>
-                    </div>
-                    <h4 class="interFont-solight-small">Wood Outdoor Adirondack Chair</h4>
-                    <div class="price p-2">
-                        <p class="me-3 interFont-bold-small fs-6">$1,009</p><span
-                            class="interFont-solight-small fs-6">$1,259</span>
                     </div>
 
-                </div>
-                <div class="cabinet m-3">
-                    <div class="cabinetImg mt-5 mb-5">
-                        <div class="like mt-5 me-3"></div>
-                        <div class="buttonContainer  w-100">
-                            <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
-                        </div>
-                    </div>
-                    <h4 class="interFont-solight-small">Solid Wood Bar Storage Cabinet</h4>
-                    <p class="me-3 interFont-bold-small fs-6">$1,889</p>
-                </div>
-                <div class="bed m-3">
-                    <div class="bedImg mt-5 mb-5">
-                        <div class="like mt-5 me-3"></div>
-                        <div class="buttonContainer  w-100">
-                            <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
-                        </div>
-                    </div>
-                    <h4 class="interFont-solight-small">Solid Wood Bed with Fabric Headboard</h4>
-                    <p class="me-3 interFont-bold-small fs-6">$3,707 - $5,707</p>
-                </div>
-                <div class="lamp m-4 ">
-                    <span class="badge text-bg-secondary ps-3 pe-3">Sold Out</span>
-                    <div class="lampImg mt-5 mb-5">
-                        <div class="like mt-5 me-3"></div>
-                        <div class="buttonContainer  w-100">
-                            <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
-                        </div>
-                    </div>
-                    <h4 class="interFont-solight-small">Floor Lamp with Polyester Shade</h4>
-                    <p class="me-3 interFont-bold-small fs-6">$399</p>
-                </div>
-                <div class="smallChair m-4 ">
-                    <span class="badge text ps-3 pe-3">Hot</span>
-                    <div class="smallChairImg mt-5 mb-5">
-                        <div class="like mt-5 me-3"></div>
-                        <div class="buttonContainer  w-100">
-                            <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
-                        </div>
-                    </div>
-                    <h4 class="interFont-solight-small">Garden Chair with armrests</h4>
-                    <p class="me-3 interFont-bold-small fs-6">$1,009</p>
-                </div>
-                <div class="bigLamp m-4 ">
-                    <span class="badge text-bg-dark ps-3 pe-3">Sale</span>
-                    <div class="bigLampImg mt-5 mb-5">
-                        <div class="like mt-5 me-3"></div>
-                        <div class="buttonContainer  w-100">
-                            <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
-                        </div>
-                    </div>
-                    <h4 class="interFont-solight-small">Led Steel Floor Lamp</h4>
-                    <div class="price">
-                        <p class="me-3 interFont-bold-small fs-6">$299</p><span
-                            class="interFont-solight-small fs-6">$429</span>
-                    </div>
-                </div>
-                <div class="blackChair m-5">
-                    <div class="blackChairImg mt-5 mb-5">
-                        <div class="like mt-5 me-3"></div>
-                        <div class="buttonContainer  w-100">
-                            <button type="button" class="button border-0 interFont-bold-small">Select Options</button>
-                        </div>
-                    </div>
-                    <h4 class="interFont-solight-small">Teak Garden Chair with armrests</h4>
-                    <p class="me-3 interFont-bold-small fs-6">$999</p>
-                </div>
+                    <div class="footer1 col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 interFont-bold  fs-6">about</h5>
 
-               
-            </div> -->
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="#" class="footerLink text-black interFont-solight-small ">Our
+                                    Story</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="footerLink text-black interFont-solight-small ">Careers</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class=" footerLink text-black interFont-solight-small ">Influencers</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="footerLink text-black interFont-solight-small ">Join
+                                    our team</a>
+                            </li>
 
-            <div class="allItems col-12 d-flex  justify-content-center align-items-center p-5 gap-4"
-                style="height: 100vh;">
-                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-                    <div class="allItemsDescription ">
-                        <h3 class="interFont-medium-large">Best Modern Furniture</h3>
-                        <a href="#" class="roboto-main-light">See All >></a>
-                    </div>
-                </div>
-                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-                    <div class="card m-4 col-12 d-flex flex-column justify-content-between" id="woodChair">
-                        <div class="badgeContainer d-flex ">
-                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
-                            <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
-                        </div>
-                        <div class="icon d-flex">
-                            <p class="p-2 interDescrip fs-6">Wishlist</p>
-                            <div class="like p-2 ms-2 mb-3"></div>
-                        </div>
-                        <div class="buttonContainer  w-100 d-flex flex-column">
-                            <button type="button" class="button border-0 interFont-bold-small">Select
-                                Options</button>
-                        </div>
-                    </div>
-                    <div class="cardTitle d-flex flex-column p-2">
-                        <h4 class="interFont-solight-small">Wood Outdoor Adirondack Chair</h4>
-                        <div class="price p-2 d-flex">
-                            <p class="me-3 interFont-bold-small fs-6">$1,009</p><span
-                                class="interFont-solight-small fs-6 text-decoration-line-through">$1,259</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-                    <div class="card col-12 d-flex flex-column justify-content-between" id="cabinet">
-                        <div class="badgeContainer  ">
-                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
-                        </div>
-                        <div class="icon d-flex" id="icon2">
-                            <p class="p-2 interDescrip fs-6">Wishlist</p>
-                            <div class="like p-2 ms-2 mb-3"></div>
-                        </div>
-                        <div class="buttonContainer  w-100 d-flex flex-column">
-                            <button type="button" class="button border-0 interFont-bold-small">Select
-                                Options</button>
-                        </div>
-                    </div>
-                    <div class="cardTitle d-flex flex-column p-2">
-                        <h4 class="interFont-solight-small">Solid Wood Bar Storage Cabinet</h4>
-                        <div class="price p-2 d-flex">
-                            <p class="me-3 interFont-bold-small fs-6">$1,889</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-                    <div class="card col-12 d-flex flex-column justify-content-between" id="bed">
-                        <div class="badgeContainer ">
-                            <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
-                        </div>
-                        <div class="icon d-flex">
-                            <p class="p-2 interDescrip fs-6">Wishlist</p>
-                            <div class="like p-2 ms-2 mb-3"></div>
-                        </div>
-                        <div class="buttonContainer  w-100">
-                            <button type="button" class="button border-0 interFont-bold-small">Select
-                                Options</button>
-                        </div>
-
-                    </div>
-                    <div class="cardTitle d-flex flex-column p-2">
-                        <h4 class="interFont-solight-small">Solid Wood Bed with Fabric Headboard</h4>
-                        <p class="me-3 interFont-bold-small fs-6">$3,707 - $5,707</p>
-                    </div>
-                </div>
-                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-                    <div class="card col-12 d-flex flex-column justify-content-between" id="lamp">
-                        <div class="badgeContainer d-flex ">
-                            <span class="badge text-bg-secondary ps-3 pe-3">Sold Out</span>
-                        </div>
-                        <div class="icon d-flex">
-                            <p class="p-2 interDescrip fs-6">Wishlist</p>
-                            <div class="like p-2 ms-2 mb-3"></div>
-                        </div>
-                        <div class="buttonContainer  w-100 d-flex flex-column">
-                            <button type="button" class="button border-0 interFont-bold-small">Select
-                                Options</button>
-                        </div>
-                    </div>
-                    <div class="cardTitle d-flex flex-column p-2">
-                        <h4 class="interFont-solight-small">Floor Lamp with Polyester Shade</h4>
-                        <p class="me-3 interFont-bold-small fs-6">$399</p>
-                    </div>
-                </div>
-                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-                    <div class="card col-12 d-flex flex-column justify-content-between" id="brownCabin">
-                        <div class="badgeContainer d-flex">
-                            <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
-                        </div>
-                        <div class="icon d-flex">
-                            <p class="p-2 interDescrip fs-6">Wishlist</p>
-                            <div class="like p-2 ms-2 mb-3"></div>
-                        </div>
-                        <div class="buttonContainer  w-100">
-                            <button type="button" class="button border-0 interFont-bold-small">Select
-                                Options</button>
-                        </div>
-
-                    </div>
-                    <div class="cardTitle d-flex flex-column p-2">
-                        <h4 class="interFont-solight-small">Bar Cabinet With Integrated Lighting</h4>
-                        <div class="price p-2 d-flex">
-                            <p class="me-3 interFont-bold-small fs-6">$1,499</p><span
-                                class="text-decoration-line-through">$2,761</span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-                    <div class="card col-12 d-flex flex-column justify-content-between" id="branchTable">
-                        <div class="badgeContainer d-flex">
-                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
-                        </div>
-                        <div class="icon d-flex">
-                            <p class="p-2 interDescrip fs-6">Wishlist</p>
-                            <div class="like p-2 ms-2 mb-3"></div>
-                        </div>
-                        <div class="buttonContainer  w-100">
-                            <button type="button" class="button border-0 interFont-bold-small">Select
-                                Options</button>
-                        </div>
-
-                    </div>
-                    <div class="cardTitle d-flex flex-column p-2">
-                        <h4 class="interFont-solight-small">Rectangular Wooden Garden Table</h4>
-                        <p class="me-3 interFont-bold-small fs-6">$2,199</p>
-
-                    </div>
-                </div>
-                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-                    <div class="card col-12 d-flex flex-column justify-content-between" id="whiteCouch">
-                        <div class="badgeContainer d-flex ">
-                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
-                        </div>
-                        <div class="icon d-flex">
-                            <p class="p-2 interDescrip fs-6">Wishlist</p>
-                            <div class="like p-2 ms-2 mb-3"></div>
-                        </div>
-                        <div class="buttonContainer  w-100 d-flex flex-column">
-                            <button type="button" class="button border-0 interFont-bold-small">Select
-                                Options</button>
-                        </div>
-                    </div>
-                    <div class="cardTitle d-flex flex-column p-2">
-                        <h4 class="interFont-solight-small">Left-Arm Chaise Bumper</h4>
-                        <p class="me-3 interFont-bold-small fs-6">$1,349</p>
-                    </div>
-                </div>
-                <div class="Blog col-12 d-flex flex-column mb-5 " style="height: 100vh;">
-                    <h3 class="interFont-bold fs-3 ms-4">Our Blog</h3>
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active carouselBackground">
-                                <img src="./pics/couch.jpg" class=" carouselBackground d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carouselWords ">
-                                    <a href="#" class="text-decoration-none">Furniture, Table </a>
-                                    <h4>the secrets to a living room that draws you in</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque unde iusto neque
-                                        ea veniam nemo ab, repellat accusamus soluta obcaecati voluptates!</p>
-                                    <a href="#"> Read More</a>
-                                </div>
-
-                            </div>
-                            <div class="carousel-item carouselBackground">
-                                <img src="./pics/backgroundchair.jpg" class="carouselBackground d-block w-100"
-                                    alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="videoContainer col-12 mt-5">
-                    <video class="video " autoplay="" muted="" playsinline="" loop=""
-                        src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/07/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4">
-                    </video>
-                    <div class="overlay">
+                        </ul>
                     </div>
 
-                    <div class="titleVideo">
-                        <h2 class="title interFont-bold-large"><a
-                                href="https://demo.theme-sky.com/nooni/shop/?filter_material=wood">WOOD</a></h2>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 interFont-bold fs-6">Customer Services</h5>
+
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="#!" class=" footerLink text-black interFont-solight-small ">Contact
+                                    Us</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="footerLink text-black interFont-solight-small ">Customer
+                                    Service</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="footerLink text-black interFont-solight-small ">Find
+                                    Store</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="footerLink text-black interFont-solight-small ">Book
+                                    appointment</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="footerLink text-black interFont-solight-small ">Shipping
+                                    &
+                                    Returns</a>
+                            </li>
+
+                        </ul>
                     </div>
-                </div>
 
-                <div class="footer col-12 mt-5">
+                    <div class=" signUp col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 interFont-bold fs-6">SIGN UP FOR EMAILS</h5>
 
-                    <footer class=" text-center text-lg-start" style="background-color: #f1f1f1;">
-                        <div class="row mt-4">
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-
-                                <div
-                                    class="logoFooter shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto">
-                                    <img src="./pics/logo.png" alt="" loading="lazy" class="mb-5" />
-                                    <p class="text-center">Text: +00(234)23-45-666</p>
-                                    <p class="text-center">Mon – Fri: 8 am – 8 pm</p>
-                                    <p class="text-center">Sat – Sun: 8 am – 7 pm </p>
-                                </div>
-                            </div>
-
-                            <div class="footer1 col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <h5 class="text-uppercase mb-4 interFont-bold  fs-6">about</h5>
-
-                                <ul class="list-unstyled">
-                                    <li class="mb-2">
-                                        <a href="#" class="footerLink text-black interFont-solight-small ">Our
-                                            Story</a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="#" class="footerLink text-black interFont-solight-small ">Careers</a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="#"
-                                            class=" footerLink text-black interFont-solight-small ">Influencers</a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="#" class="footerLink text-black interFont-solight-small ">Join
-                                            our team</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <h5 class="text-uppercase mb-4 interFont-bold fs-6">Customer Services</h5>
-
-                                <ul class="list-unstyled">
-                                    <li class="mb-2">
-                                        <a href="#!" class=" footerLink text-black interFont-solight-small ">Contact
-                                            Us</a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="#!" class="footerLink text-black interFont-solight-small ">Customer
-                                            Service</a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="#!" class="footerLink text-black interFont-solight-small ">Find
-                                            Store</a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="#!" class="footerLink text-black interFont-solight-small ">Book
-                                            appointment</a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="#!" class="footerLink text-black interFont-solight-small ">Shipping &
-                                            Returns</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                            <div class=" signUp col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <h5 class="text-uppercase mb-4 interFont-bold fs-6">SIGN UP FOR EMAILS</h5>
-
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p><i class="fas fa-map-marker-alt pe-1 interFont-solight-small "></i>Enjoy 15%
-                                            off*
-                                            your first order
-                                            when sign up to our newsletter</p>
-                                    </li>
-                                    <li>
-                                        <input type="email" placeholder="Your email address">
-                                        <button type="button"
-                                            class="subscribeButton bg-black text-white ms-4 ps-4 pe-4 pt-2 pb-2 interFont-bold-small border-0">SUBSCRIBE</button>
-                                    </li>
-                                </ul>
-                                <div class="socialMedia ">
-                                    <button type="button" class="btn m-2">
-                                        <i class="bi bi-facebook"></i>
-                                    </button>
-                                    <button type="button" class="btn m-2">
-                                        <i class="bi bi-twitter"></i>
-                                    </button>
-                                    <button type="button" class="btn m-2">
-                                        <i class="bi bi-instagram"></i>
-                                    </button>
-                                    <button type="button" class="btn m-2">
-                                        <i class="bi bi-pinterest"></i>
-                                    </button>
-                                </div>
-                            </div>
-
+                        <ul class="list-unstyled">
+                            <li>
+                                <p><i class="fas fa-map-marker-alt pe-1 interFont-solight-small "></i>Enjoy
+                                    15%
+                                    off*
+                                    your first order
+                                    when sign up to our newsletter</p>
+                            </li>
+                            <li>
+                                <input type="email" placeholder="Your email address">
+                                <button type="button"
+                                    class="subscribeButton bg-black text-white ms-4 ps-4 pe-4 pt-2 pb-2 interFont-bold-small border-0">SUBSCRIBE</button>
+                            </li>
+                        </ul>
+                        <div class="socialMedia ">
+                            <button type="button" class="btn m-2">
+                                <i class="bi bi-facebook"></i>
+                            </button>
+                            <button type="button" class="btn m-2">
+                                <i class="bi bi-twitter"></i>
+                            </button>
+                            <button type="button" class="btn m-2">
+                                <i class="bi bi-instagram"></i>
+                            </button>
+                            <button type="button" class="btn m-2">
+                                <i class="bi bi-pinterest"></i>
+                            </button>
                         </div>
-
-
-                        <div class=" copyrightContainer border-top text-center p-3 border-black ">
-                            <div class="linkFooter">
-                                <a href="#" class="p-2">Privacy Policy</a>
-                                <a href="#" class="p-2">Help</a>
-                                <a href="#" class="p-2">FAQs</a>
-                            </div>
-                            <p>
-                                © Nooni. All Rights Reserved.
-                            </p>
-                            <div class="payFooter">
-                                <img src="./pics/ca.png" alt="">
-                            </div>
-                        </div>
-                    </footer>
+                    </div>
 
                 </div>
 
-            </div>
 
-
-
-
-            <!-- <div class="elementor-element elementor-element-f0f4aa5 e-flex e-con-boxed e-con e-parent"
-                data-id="f0f4aa5" data-element_type="container"
-                data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/demo.theme-sky.com\/nooni\/wp-content\/uploads\/2023\/07\/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;content_width&quot;:&quot;boxed&quot;}"
-                data-core-v316-plus="true">
-                <div class="e-con-inner">
-                    <div class="elementor-background-video-container">
-                        <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted=""
-                            playsinline="" loop=""
-                            src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/07/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4"
-                            style="width: 1524.8px; height: 857.7px;"></video>
+                <div class=" copyrightContainer border-top text-center p-3 border-black ">
+                    <div class="linkFooter">
+                        <a href="#" class="p-2">Privacy Policy</a>
+                        <a href="#" class="p-2">Help</a>
+                        <a href="#" class="p-2">FAQs</a>
                     </div>
-                    <div class="elementor-element elementor-element-6cf0026 elementor-widget elementor-widget-heading"
-                        data-id="6cf0026" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default"><a
-                                    href="https://demo.theme-sky.com/nooni/shop/?filter_material=wood">WOOD</a></h2>
-                        </div>
+                    <p>
+                        © Nooni. All Rights Reserved.
+                    </p>
+                    <div class="payFooter">
+                        <img src="./pics/ca.png" alt="">
                     </div>
                 </div>
-            </div> -->
-
+            </footer>
 
         </div>
-        <script src="jquery.min.js"></script>
-        <script src="owlcarousel/owl.carousel.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

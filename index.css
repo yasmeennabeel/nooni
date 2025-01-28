@@ -107,7 +107,6 @@ body {
 .container {
     width: 100%;
     max-width: 100%;
-    padding: 0;
 
 }
 
@@ -142,13 +141,13 @@ body {
 }
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     border-bottom: solid 1px rgba(206, 206, 206, 0.885);
 }
 
 .navbar {
-    position: fixed;
+    position: sticky;
     z-index: 6;
     top: 0;
     display: flex;
@@ -159,30 +158,24 @@ nav {
     border-bottom: 1px solid rgba(206, 206, 206, 0.885);
 }
 
+.navbar i {
+    cursor: pointer;
+}
+
 .logoNav img {
     display: flex;
     justify-content: center;
     width: 180px;
 }
 
-.searchIcon {
-    width: 70px;
-}
+
 
 @media (max-width: 768px) {
-    .shopByDescrip {
-        /* display: none; */
-        visibility: hidden;
+    .carouselWords {
+        display: none;
     }
 }
 
-/* .buttonLang{
-    display: flex;
-    justify-content: right;
-}
-.buttonLang li {
-    color: black;
-} */
 
 .searchIcon {
     width: 30px;
@@ -197,7 +190,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
 }
 
 .userLogo,
@@ -207,25 +199,7 @@ nav {
     cursor: pointer;
 }
 
-.carouselImg {
-    width: 550px;
-    height: 80vh;
-    position: absolute;
-    right: 10px;
-    top: -150px;
 
-}
-
-.itemBig {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
 
 @keyframes textFadeIn {
     0% {
@@ -248,44 +222,6 @@ nav {
     animation-fill-mode: forwards;
 }
 
-/* 
-.shopBy .carousel-inner{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 20vh;
- } */
-/* .shopBy .carousel-item{
-    display: flex;
- } */
-/* .item1 img{
-    width: 10%;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-
-} */
-/* 
-
-@media screen and (max-width: 767px){
-    .itemBig{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .item1Big{
-        width: 150px;
-        height: 50vh;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-} */
 .itemBig:hover a {
     color: rgba(209, 2, 2, 1);
 }
@@ -293,16 +229,12 @@ nav {
 .item1 {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
 }
 
 .item1 img {
     width: 90px;
 }
 
-/* .item1 img:hover{
-    background-color: rgb(0, 0, 0);
-} */
 
 .shopByDescrip {
     display: flex;
@@ -314,7 +246,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 20vh;
     height: 20vh;
 
 }
@@ -338,13 +269,15 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
 }
-.offcanvas button:hover{
+
+.offcanvas button:hover {
     cursor: pointer;
 }
+
 .lampalone {
     width: 180px;
     transition: ease all 500ms;
-    
+
 }
 
 .lampalone:hover {
@@ -358,10 +291,11 @@ nav {
     cursor: pointer;
     border: 1px solid black;
 }
-.offersRight img:hover{
+
+.offersRight img:hover {
     border: 2px solid black;
- margin: 0px;
- padding: 10px;
+    margin: 0px;
+    padding: 10px;
 }
 
 .offersRight {
@@ -370,224 +304,59 @@ nav {
 
 }
 
-.offersBottom img{
+.offersBottom img {
     transition: ease all 500ms;
     cursor: pointer;
     border: 1px solid black;
 }
-.greenpic:hover{
+
+.greenpic:hover {
     border: 2px solid black;
- margin: 0px;
- padding: 10px;
+    margin: 0px;
+    padding: 10px;
 }
-.offersLeftContent a:hover{
+
+.offersLeftContent a:hover {
     color: rgba(209, 2, 2, 1);
 }
+
 #carouselExampleIndicators {
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
-#carouselExampleIndicators1 {
-    margin-bottom: 40px; 
-}
+
 
 .offersPics {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-    #carouselExampleIndicators{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .offersPics {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        margin-top: 30px; 
-    }
-
-    .offersRight {
-        order: 1;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .offersRight img {
-        width: 90%;
-        max-width: 400px;
-        height: auto;
-    }
-
-    .offersLeft {
-        order: 2;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .offersLeftContent {
-        flex: 1;
-        max-width: 60%;
-        text-align: left;
-        padding: 10px;
-    }
-    .offersLeftContent h3{
-        font-size: 1.5rem;
-    }
-    .offersLeftContent a{
-        font-size: 1rem;
-    }
-
-    .lampalone {
-        flex: 1;
-        max-width: 30%;
-        height: auto;
-        padding: 10px;
-    }
-
-    .offersBottom img {
-        order: 3;
-        width: 100%;
-        max-width: 90%;
-        height: auto;
-        margin-top: 20px; 
-    }
-    .orangeTitle {
-        margin-top: 40px; 
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .orangeDescripTitle {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .orangeDescrip {
-        text-align: center;
-    }
-
-    .orangeTitle img {
-        width: 70%; 
-        max-width: 400px;
-        height: auto;
-    }
-}
-
-
-/* @media (max-width: 768px) {
-    .offersPics {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-        height: 100vh; 
-    }
-
-    .offersLeft, .offersRight {
-        display: flex;
-        width: 100%; 
-    }
-
-    .offersLeftContent {
-        text-align: center; 
-        padding: 10px;
-    }
-
-    .offersLeft img, .offersRight img {
-        width: 100%; 
-        max-width: 100%;
-        height: auto;
-        
-    }
-} */
-
-/* 
-.offersPics {
+.offersRight {
+    order: 1;
     display: flex;
-    flex-direction: column;
-    position: relative;
     justify-content: center;
     width: 100%;
-    height: 100vh;
-
 }
 
-.offersPics h3,
-a {
-    z-index: 5;
-    width: 35%;
+.offersRight img {
+    width: 90%;
+    max-width: 400px;
 }
 
-.lampleft {
+.offersLeft {
+    order: 2;
     display: flex;
-    flex-direction: column;
-    
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.greenpic {
-    width: 660px;
-    position: relative;
-    left: 0px;
-    bottom: -82px;
-    z-index: 5;
-    transition: ease all 500ms;
-    cursor: pointer;
-    border: 4px solid transparent;
+.offersLeftContent {
+    flex: 1;
+    max-width: 60%;
+    text-align: left;
+    padding: 10px;
 }
-.greenpic:hover{
-    border: 2px solid black;
- margin: 0px;
- padding: 15px;
-}
-
-.lampleft .lampalone {
-    width: 20%;
-    position: absolute;
-    top: 150px;
-    right: 55%;
-    z-index: 2;
-    transition: ease all 500ms;
-}
-.lampalone:hover{
- padding: 0px;
- margin: 15px;
-}
-
-.yellowpicRight .yellowpic {
-    width: 700px;
-    transition: ease all 500ms;
-    cursor: pointer;
-    border: 4px solid transparent;
-}
-.yellowpic:hover{
-    border: 2px solid black;
- margin: 0px;
- padding: 15px;
-}
-
-.yellowpicRight {
-    display: flex;
-    justify-content: right;
-    position: absolute;
-    top: 0;
-    right: 50px;
-} */
 
 .orangeTitle {
     position: relative;
@@ -638,331 +407,6 @@ a {
     transition: ease all 400ms;
 }
 
-/* .allItems {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.allItems h4:hover {
-    color: rgba(209, 2, 2, 1);
-}
-
-.allItemsDescription {
-    display: flex;
-    flex-direction: column;
-    width: 19%;
-    height: 20vh;
-    justify-content: center;
-}
-
-.allItemsDescription a {
-    color: black;
-    text-decoration: none;
-}
-.allItemsDescription a:hover{
-color: rgba(209, 2, 2, 1);
-font-weight: bold;
-
-}
-
-.badge {
-    background-color: rgba(209, 2, 2, 1);
-    border-radius: 0;
-    text-transform: uppercase;
-}
-
-.like {
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 15px;
-    background-image: url('./pics/like.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: ease all 500ms;
-    }
-
-.buttonContainer button {
-    color: white;
-    visibility: hidden;
-    width: 100%;
-    text-transform: uppercase;
-    padding: 15px;
-    transition: ease all 500ms;
-
-}
-
-.buttonContainer:hover button {
-    visibility: visible;
-    background-color: rgba(209, 2, 2, 1);
-} */
-/* 
-.woodImg {
-    background-image: url('./pics/woodenchairwesh.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
-}
-
-.woodChair {
-    width: 20%;
-    height: 80vh;
-}
-
-.woodImg:hover {
-    background-image: url('./pics/woodenchair.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
-.like:hover {
-    background-color: rgba(209, 2, 2, 1);
-    border-radius: 50%;
-    border: 50px;
-    background-image: url('./pics/likewhite.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-.price {
-    display: flex;
-}
-
-.price span {
-    text-decoration: line-through;
-    color: grey;
-}
-
-.cabinet {
-    width: 20%;
-    height: 80vh;
-}
-
-.cabinetImg {
-    background-image: url('./pics/cabinet\ no\ hover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
-}
-
-.cabinetImg:hover {
-    background-image: url('./pics/cabinethover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-
-}
-
-.bed {
-    width: 22%;
-    height: 80vh;
-}
-
-.bedImg {
-    background-image: url('./pics/bednohover.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
-}
-
-.bedImg:hover {
-    background-image: url('./pics/bedhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
-.lamp {
-    width: 20%;
-    height: 80vh;
-}
-
-.lampImg {
-    background-image: url('./pics/lampnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
-}
-
-.lampImg:hover {
-    background-image: url('./pics/lamphover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
-.smallChair {
-    width: 20%;
-    height: 80vh;
-}
-
-.smallChairImg {
-    background-image: url('./pics/chairnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
-}
-
-.smallChairImg:hover {
-    background-image: url('./pics/chairhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
-.bigLamp {
-    width: 20%;
-    height: 80vh;
-}
-
-.bigLampImg {
-    background-image: url('./pics/lampsteelnohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
-}
-
-.bigLampImg:hover {
-    background-image: url('./pics/lampsteelhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-}
-
-.blackChair {
-    width: 20%;
-    height: 80vh;
-}
-
-.blackChairImg {
-    background-image: url('./pics/chairblacknohover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transition: ease all 500ms;
-
-}
-
-.blackChairImg:hover {
-    background-image: url('./pics/chairblackhover.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    cursor: pointer;
-
-} */
 .allItems {
     flex: 1;
     display: flex;
@@ -984,6 +428,129 @@ font-weight: bold;
 .buttonContainer:hover button {
     visibility: visible;
     background-color: rgba(209, 2, 2, 1);
+}
+
+.section-3 {
+    display: flex;
+}
+
+.left,
+.right {
+    position: relative;
+    overflow: hidden;
+}
+
+.imageContainer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.section-3 img {
+    /* display: block; */
+    /* width: 100%; */
+    transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+.innerBorder {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 90%;
+    height: 90%;
+    border: 2px solid transparent;
+    pointer-events: none;
+    transition: all 0.6s ease;
+}
+
+.section-3 a:hover {
+    color: rgba(209, 2, 2, 1);
+}
+
+.imageContainer:hover img {
+    transform: scale(1.1);
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.imageContainer:hover .innerBorder {
+    border-color: rgba(0, 0, 0, 0.6);
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.animatedImage {
+    animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.category-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlayContainer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.category-image {
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.overlayEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.category-item:hover .bedCategory {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.category-item:hover .overlayEffect {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.category-item h4,
+.category-item p {
+    transition: color 0.3s ease;
+}
+
+.category-item:hover h4 {
+    color: #d5553e;
+}
+
+.category-item:hover p {
+    color: #777;
 }
 
 .allItemsDescription a {
@@ -1019,6 +586,17 @@ font-weight: bold;
 
 #woodChair:hover {
     background-image: url('./pics/woodenchair.jpg');
+}
+
+#blackChair {
+    background-image: url('./pics/chairblacknohover.jpg');
+    width: 100%;
+    height: 400px;
+}
+
+#blackChair:hover {
+    background-image: url('./pics/chairblackhover.jpg');
+
 }
 
 .icon {
@@ -1147,16 +725,6 @@ font-weight: bold;
     background-image: url('./pics/greycouchhover.jpg');
 }
 
-.carouselWords {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    height: 100vh;
-    justify-content: center;
-    /* align-items: center; */
-    text-align: left;
-    text-transform: capitalize;
-}
 
 .carouselWords a {
     color: black;
@@ -1166,14 +734,18 @@ font-weight: bold;
     color: rgba(209, 2, 2, 1);
 }
 
-/* .carouselWords p{
-    width: 48%;
-} */
-/* .elementor-1023 .elementor-element.elementor-element-f0f4aa5:not(.elementor-motion-effects-element-type-background),
-.elementor-1023 .elementor-element.elementor-element-f0f4aa5>.elementor-motion-effects-container>.elementor-motion-effects-layer{
-    background: url(https://demothemesky-be87.kxcdn.com/nooni/wp-content/uploads/2023/07/video-placeholder.jpg) 50% 50%;
-    background-size: cover;
-} */
+.carouselWords {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    color: white !important;
+}
+
+.item1,
+.item2 {
+    position: relative;
+}
+
 .videoContainer {
     width: 1450px;
     height: 80vh;
@@ -1239,7 +811,7 @@ font-weight: bold;
 }
 
 footer a:hover {
-    color: rgba(209, 2, 2, 1);
+    color: rgba(209, 2, 2, 1) !important;
 }
 
 .list-unstyled input {
@@ -1248,7 +820,7 @@ footer a:hover {
 }
 
 footer a:hover {
-    color: rgba(209, 2, 2, 1);
+    color: rgba(209, 2, 2, 1) !important;
 }
 
 .socialMedia {
@@ -1256,6 +828,12 @@ footer a:hover {
 
 }
 
+.signUp button:hover {
+    background-color: rgba(209, 2, 2, 1) !important;
+    color: white !important;
+
+}
+
 button i:hover {
-    color: rgba(209, 2, 2, 1);
+    color: rgba(209, 2, 2, 1) !important;
 }

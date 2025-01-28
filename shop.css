@@ -140,13 +140,13 @@ color: rgb(160, 160, 160);
 }
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     border-bottom: solid 1px rgba(206, 206, 206, 0.885);
 }
 
 .navbar {
-    position: fixed;
+    position: sticky;
     z-index: 6;
     top: 0;
     display: flex;
@@ -156,6 +156,10 @@ nav {
     background-color: white;
     border-bottom: 1px solid rgba(206, 206, 206, 0.885);
 }
+.navbar i {
+    cursor: pointer;
+    }
+    
 
 .logoNav img {
     display: flex;
@@ -244,42 +248,60 @@ nav {
     cursor: pointer;
 }
 
-.ALLshopByItem {
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.item1 {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    overflow: hidden; 
-    background-color: transparent; 
-    transition: background-color 0.3s ease;
-}
-
-.item1 img {
-    width: 95px;
-    display: block; 
-    background-color: transparent; 
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.item1 img:hover{
-    background-color: rgba(128, 128, 128, 0.5); 
-    mix-blend-mode: multiply; 
-    transform: scale(1.05);    
+.category-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-
 }
 
-.shopItems{
+.category-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlayContainer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.category-image {
     width: 100%;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.overlayEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.category-item:hover .bedCategory {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.category-item:hover .overlayEffect {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.category-item h4,
+.category-item p {
+    transition: color 0.3s ease;
+}
+
+.category-item:hover h4 {
+    color: #d5553e;
+}
+
+.category-item:hover p {
+    color: #777;
 }
 .filterType, .filterColor, .filterPrice, .filterMaterial, .filterSize, .filterPattern{
     display: flex;
@@ -340,10 +362,10 @@ font-weight: 500px;
     .filter-icon:hover{
         color: rgba(209, 2, 2, 1);
     }
-    .shopItems{
+    /* .shopItems{
         display: flex;
         flex-direction: column;
-    }
+    } */
     nav{
         height: 20vh;
     }
@@ -424,7 +446,6 @@ font-weight: bold;
 #woodChair{
     background-image: url('./pics/woodenchairwesh.jpg');
     width: 100%;
-    height: 400px;
 }
 #woodChair:hover{
     background-image: url('./pics/woodenchair.jpg');
@@ -489,7 +510,6 @@ font-weight: bold;
 #cabinet {
     background-image: url('./pics/cabinet\ no\ hover.jpg');
     width: 100%;
-    height: 400px;
 }
 
 #cabinet:hover {
@@ -500,7 +520,6 @@ font-weight: bold;
 #bed {
     background-image: url('./pics/bednohover.jpg');
     width: 100%;
-    height: 400px;
 }
 
 #bed:hover {
@@ -510,7 +529,6 @@ font-weight: bold;
 #lamp {
     background-image: url('./pics/lampnohover.jpg');
     width: 100%;
-    height: 400px;
 }
 
 
@@ -522,7 +540,6 @@ font-weight: bold;
 #brownCabin{
     background-image: url('./pics/browncabinnohover.jpg');
     width: 100%;
-    height: 400px;
 }
 
 #brownCabin:hover {
@@ -532,7 +549,6 @@ font-weight: bold;
 #branchTable{
     background-image: url('./pics/branchtablenohover.jpg');
     width: 100%;
-    height: 400px;
 }
 #branchTable:hover{
     background-image: url('./pics/branchtablehover.jpg');
@@ -541,7 +557,6 @@ font-weight: bold;
 #whiteCouch{
     background-image: url('./pics/greycouchnohover.jpg');
     width: 100%;
-    height: 400px;
 }
 #whiteCouch:hover{
     background-image: url('./pics/greycouchhover.jpg');
@@ -550,7 +565,6 @@ font-weight: bold;
 #roundCabin{
     background-image: url('./pics/circlecabinnohover.jpg');
     width: 100%;
-    height: 400px;
 }
 #roundCabin:hover{
     background-image: url('./pics/circlecabinhover.jpg');
@@ -559,7 +573,6 @@ font-weight: bold;
 #lastCouch{
     background-image: url('./pics/whitecouchnohover.jpg');
     width: 100%;
-    height: 400px;
 }
 #lastCouch:hover{
     background-image: url('./pics/greycouchhover.jpg');
@@ -569,7 +582,6 @@ font-weight: bold;
 #smallChair{
     background-image: url('./pics/chairnohover.jpg');
     width: 100%;
-    height: 400px;
 }
 #smallChair:hover{
     background-image: url('./pics/chairhover.jpg');
@@ -579,7 +591,6 @@ font-weight: bold;
 #bigLamp{
     background-image: url('./pics/lampsteelnohover.jpg');
     width: 100%;
-    height: 400px;
 }
 #bigLamp:hover{
     background-image: url('./pics/lampsteelhover.jpg');
@@ -587,7 +598,6 @@ font-weight: bold;
 #blackChair{
     background-image: url('./pics/chairblacknohover.jpg');
     width: 100%;
-    height: 400px;
 }
 #blackChair:hover{
     background-image: url('./pics/chairblackhover.jpg');
