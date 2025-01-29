@@ -367,7 +367,7 @@ nav {
   }
   
   .nav-tabs .nav-link.active {
-    background-color: #2d2c2c;
+    background-color: rgba(209, 2, 2, 1);
     color: #fff;
   }
   
@@ -424,6 +424,14 @@ nav {
 }
 #blueChair:hover{
     background-image: url('./pics/woodenchair.jpg');
+
+}
+#blackChair{
+    background-image: url('./pics/chairblacknohover.jpg');
+    width: 100%;
+}
+#blackChair:hover{
+    background-image: url('./pics/chairblackhover.jpg');
 
 }
 
@@ -539,7 +547,7 @@ nav {
     transition: ease all 500ms;
 }
 
-.likeWish:hover {
+.addTo:hover .likeWish {
     background-color: rgba(209, 2, 2, 1);
     border-radius: 50%;
     border: 50px;
@@ -573,7 +581,13 @@ nav {
     color: rgba(209, 2, 2, 1);
 }
 
-
+.customerImage{
+    border-radius: 50%;
+    width: 80px;
+}
+.review{
+    border-bottom: 2px rgba(190, 186, 186, 0.589) solid;
+}
 .logoFooter {
     display: flex;
     flex-wrap: wrap;

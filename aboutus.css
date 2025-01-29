@@ -121,13 +121,11 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-
 }
 
 .container {
     width: 100%;
     max-width: 100%;
-    padding: 0;
 
 }
 .blackBan {
@@ -137,7 +135,6 @@ body {
     color: white;
     text-transform: uppercase;
     padding: 5px;
-    /* justify-content: space-between; */
 }
 
 .blackBan a {
@@ -240,15 +237,6 @@ nav {
     text-decoration: underline;
 }
 
-/* --nooni-main-font-medium-family: Inter;
-    --nooni-main-font-medium-style: normal;
-    --nooni-main-font-medium-weight: 500;
-    --nooni-main-font-bold-family: Inter;
-    --nooni-main-font-bold-style: normal;
-    --nooni-main-font-bold-weight: 700;
-    --nooni-body-font-size: 15px; */
-
-
 .title{
     display: flex;
     flex-direction: column;
@@ -280,15 +268,19 @@ nav {
 .title img{
     width: 100%;
 }
+
 .howWork img{
     width: 100%; 
     max-width: 50vw; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-out;
     object-fit: cover;
 }
 .howWork img:hover{
     transition: ease all 500ms;
+    transform: scale(1.05);
+
 
 }
 .howWork{
@@ -297,23 +289,81 @@ nav {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    /* transition: ease all 500ms; */
     cursor: pointer;
 }
-/* .howWorkContent p{
-    width: 550px;
-} */
+
  .howWorkContent{
     max-width: 60%; 
     padding: 1rem;
     margin: 0 auto; 
  }
-
+.howWorkContent h4:hover{
+    color: rgba(209, 2, 2, 1);
+    transition: ease all 500ms;
+    transform: scale(1.05);
+    
+}
  .titleContent{
     max-width: 80%; 
     margin: 0 auto; 
     text-align: center;
  }
+ .title img:hover{
+    transition: ease all 500ms;
+    transform: scale(1.05);
+ }
+ .title h1:hover{
+    color: rgba(209, 2, 2, 1) !important;
+    cursor: pointer;
+ }
+.teamSection {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.teamMembers .member {
+    text-align: center;
+    transition: transform 0.3s ease-out;
+}
+
+.teamMembers .member:hover {
+    transform: scale(1.05);
+}
+
+.teamMembers .member h5,
+.teamMembers .member p {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.teamMembers .member:hover h5,
+.teamMembers .member:hover p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.teamMembers .member img {
+    transition: transform 0.3s ease-out;
+}
+
+.teamMembers .member:hover img {
+    transform: scale(1.1);
+}
+
  .teamSection{
     display: flex;
     flex-direction: column;
@@ -333,6 +383,20 @@ nav {
     align-items: center;
  }
 
+.deliver h1,
+.deliver p {
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.deliver:hover h1,
+.deliver:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
  .deliver{
     width: 100%;
     height: 50vh;
@@ -341,26 +405,34 @@ nav {
     flex-direction: column;
     align-items: center;
     background-image: url("https://demo.theme-sky.com/nooni/wp-content/uploads/2023/04/about-2.jpg");
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
  }
  .deliver button{
     width: 150px;
+    transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+
  }
  .deliver button:hover{
+    transform: scale(1.1);
     background-color: red;
     color: white;
  }
+
+.companies img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
  
  .companies{
     width: 100%;
-    height: 40vh;
     display: flex;
     justify-content: center;
  }
  .companies img{
     width: 210px;
-    height: 210px;
+    transition: transform 0.4s ease-out;
+
  }
 
  .logoFooter {
@@ -416,49 +488,4 @@ button i:hover{
 .subscribeButton:hover{
 
     background-color: rgba(209, 2, 2, 1);
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-@media (max-width: 768px) {
-    
-    .titleContent, .howWorkContent, .footer {
-        padding: 0 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .teamSection{
-        display: flex;
-        justify-content: center;
-    }
-    .howWork{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-
-    .teamMembers {
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar {
-        flex-wrap: wrap;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-    .howWork img {
-        max-width: 100%;
-    }
-
-    .companies img {
-        width: 150px;
-        height: 150px;
-    }
 }
