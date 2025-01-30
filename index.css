@@ -320,12 +320,6 @@ nav {
     color: rgba(209, 2, 2, 1);
 }
 
-#carouselExampleIndicators {
-    margin-bottom: 40px;
-}
-
-
-
 .offersPics {
     margin-top: 20px;
 }
@@ -425,7 +419,7 @@ nav {
     transition: ease all 500ms;
 }
 
-.buttonContainer:hover button {
+.itemContainer:hover button {
     visibility: visible;
     background-color: rgba(209, 2, 2, 1);
 }
@@ -442,13 +436,11 @@ nav {
 
 .imageContainer {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     overflow: hidden;
 }
 
 .section-3 img {
-    /* display: block; */
-    /* width: 100%; */
     transition: transform 0.6s ease, opacity 0.4s ease;
 }
 
@@ -518,20 +510,8 @@ nav {
 }
 
 .category-image {
-    width: 100%;
+    width: 35%;
     transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.overlayEffect {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    transition: background-color 0.3s ease;
-    pointer-events: none;
-    border-radius: 50%;
 }
 
 .category-item:hover .bedCategory {
@@ -549,7 +529,7 @@ nav {
 }
 
 .category-item:hover h4 {
-    color: #d5553e;
+    color: rgba(209, 2, 2, 1);
 }
 
 .category-item:hover p {
@@ -777,7 +757,26 @@ nav {
     cursor: pointer;
 
 }
+#slide1, #slide2, #slide3{
+    border-radius: 50% !important;
+    /* background-color: white !important; */
+    border: 2px solid black;
+    width: 15px !important;
+    height: 15px !important;
 
+}
+#slide1:hover, #slide2:hover, #slide3:hover{
+    background-color: black !important;
+}
+.carousel-indicators{
+    justify-content: left;
+    margin: 25px;
+
+}
+.carousel-indicators .active {
+    background-color: black !important;
+    border: 1px solid black; 
+}
 .titleVideo {
     position: absolute;
     top: 40%;

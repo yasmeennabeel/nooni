@@ -284,9 +284,8 @@ nav {
   }
   .colorOptions img:hover{
     cursor: pointer;
-    /* transform: translateY(2px);
-    transform: translateX(2px); */
-    transition: ease all 500ms;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
     border: 6px solid rgb(67, 63, 63);
 
   }
@@ -322,6 +321,7 @@ nav {
   }
   .colorOptions{
     transition: ease all 500ms;
+    overflow: hidden;
   }
   .addCart:hover{
     background-color: black !important;
@@ -372,8 +372,8 @@ nav {
   }
   
   .nav-tabs .nav-link:hover {
-    color: #000;
-    background-color: #f1f1f1;
+    color: white;
+    background-color: #858585;
   }
   
   .tab-content {
@@ -400,7 +400,7 @@ nav {
     transition: ease all 500ms;
 }
 
-.buttonContainer:hover button {
+.itemContainer:hover button {
     visibility: visible;
     background-color: rgba(209, 2, 2, 1);
 }

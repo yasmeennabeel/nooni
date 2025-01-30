@@ -173,10 +173,10 @@ nav {
     background-color: white;
     border-bottom: 1px solid rgba(206, 206, 206, 0.885);
 }
-
 .navbar i {
     cursor: pointer;
-}
+    }
+    
 
 .logoNav img {
     display: flex;
@@ -184,16 +184,23 @@ nav {
     width: 180px;
 }
 
-
 .searchIcon {
     width: 70px;
+}
+
+
+.container-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
 }
 
 .userLogo,
 .favLogo,
 .cartLogo {
     width: 30px;
-    cursor: pointer;
 }
 
 .offcanvas-body {
@@ -214,10 +221,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-}
-
-.offcanvas button:hover {
-    cursor: pointer;
 }
 
 .breadcrumb{
