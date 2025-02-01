@@ -123,11 +123,11 @@ body {
     overflow-x: hidden;
 }
 
-.container {
+/* .container {
     width: 100%;
     max-width: 100%;
 
-}
+} */
 .blackBan {
     width: 100%;
     display: flex;
@@ -189,13 +189,12 @@ nav {
 }
 
 
-.container-fluid {
+/* .container-fluid {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
-}
+} */
 
 .userLogo,
 .favLogo,
@@ -221,6 +220,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+.offcanvas-body a:hover{
+    color: rgba(209, 2, 2, 1);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .breadcrumb{
@@ -252,7 +256,7 @@ nav {
 .interTitleFont{
     font-family: Inter;
     font-style: normal;
-    width: var( --container-widget-width, 980px );
+    /* width: var( --container-widget-width, 980px ); */
     font-size: 45px;
      font-weight: 400;
      line-height: 26px;

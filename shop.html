@@ -14,104 +14,73 @@
 
 <body>
 
-    <div class="blackBan bg-black roboto-main-light pt-2 ps-5">
-        <p>
+    <div class="blackBan bg-black roboto-main-light ps-5 pt-2 ">
+        <h6 class="fw-lighter">
             Up to 40% off Best-Selling Furniture. <a href="#">SHOP NOW</a>
-        </p>
+        </h6>
+
     </div>
     <nav class="navbar d-flex col-12">
-        <div class="menu-icon d-flex gap-3" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
-            <i class="bi bi-list"></i>
-            <div class="menu-icon searchIcon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1">
-                <i class="bi bi-search"></i>
+        <div class="container">
+            <div class="menu-icon d-flex gap-3" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
+                <i class="bi bi-list"></i>
+                <div class="menu-icon searchIcon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1">
+                    <i class="bi bi-search"></i>
+                </div>
             </div>
-        </div>
 
-        <div class="logoNav">
-            <img src="./pics/logo.png" />
-        </div>
-        <div class="userActions ">
-            <img src="./pics/person_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" class="userLogo">
-            <img src="./pics/favorite_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="fav" class="favLogo">
-            <img src="./pics/shopping_cart_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="cart" class="cartLogo">
+            <div class="logoNav">
+                <img src="./pics/logo.png" />
+            </div>
+            <div class="userActions ">
+                <img src="./pics/person_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" class="userLogo">
+                <img src="./pics/favorite_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="fav" class="favLogo">
+                <img src="./pics/shopping_cart_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="cart"
+                    class="cartLogo">
+            </div>
         </div>
     </nav>
     <div class="offcanvas offcanvasLeft offcanvas-start firstCanva" tabindex="-1" id="menuOffcanvas"
-        aria-labelledby="menuOffcanvasLabel">
-        <div class="offcanvas-header">
-            <h5 id="menuOffcanvasLabel">Menu</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="btn-group dropend">
-                <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Home
-                </button>
-                <ul class="dropdown-menu p-4">
-                    <li>Furniture 1</li>
-                    <li>Furniture 1</li>
-
-                </ul>
-            </div>
-            <div class="btn-group dropend">
-                <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Shop
-                </button>
-                <ul class="dropdown-menu p-4">
-                    <li>Furniture 1</li>
-                    <li>Furniture 1</li>
-
-                </ul>
-            </div>
-            <div class="btn-group dropend">
-                <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Product
-                </button>
-                <ul class="dropdown-menu p-4">
-                    <li>Furniture 1</li>
-                    <li>Furniture 1</li>
-
-                </ul>
-            </div>
-            <div class="btn-group dropend">
-                <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Blog
-                </button>
-                <ul class="dropdown-menu p-4">
-                    <li>Furniture 1</li>
-                    <li>Furniture 1</li>
-
-                </ul>
-            </div>
-            <div class="btn-group dropend">
-                <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    About Us
-                </button>
-                <ul class="dropdown-menu p-4">
-                    <li>Furniture 1</li>
-                    <li>Furniture 1</li>
-
-                </ul>
-            </div>
-            <div class="btn-group dropend">
-                <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Contact Us
-                </button>
-                <ul class="dropdown-menu p-4">
-                    <li>Furniture 1</li>
-                    <li>Furniture 1</li>
-
-                </ul>
-            </div>
-
-        </div>
+    aria-labelledby="menuOffcanvasLabel">
+    <div class="offcanvas-header d-flex align-items-center flex-column ">
+        <h5 id="menuOffcanvasLabel" class="interFont-bold">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
+    <div class="offcanvas-body gap-4 d-flex flex-column align-items-center">
+        <div class="btn-group dropend">
+            <a href="./index.html" class="interFont-solight fs-4 text-decoration-none">
+                Home
+            </a>
+
+        </div>
+        <div class="btn-group dropend">
+            <a href="./shop.html" class="interFont-solight fs-4 text-decoration-none">
+                Shop
+            </a>
+        </div>
+        <div class="btn-group dropend">
+            <a href="./grid.html" class="interFont-solight fs-4 text-decoration-none">
+                Product
+            </a>
+        </div>
+        <div class="btn-group dropend">
+            <a href="#" class="interFont-solight fs-4 text-decoration-none">
+                Blog
+            </a>
+        </div>
+        <div class="btn-group dropend">
+            <a href="./aboutus.html" class="interFont-solight fs-4 text-decoration-none">
+                About Us
+            </a>
+        </div>
+        <div class="btn-group dropend">
+            <a href="./contact.html" class="interFont-solight fs-4 text-decoration-none">
+                Contact Us
+            </a>
+        </div>
+
+    </div>
+</div>
 
 
     <div class="offcanvas offcanvasRight offcanvas-end firstCanva" tabindex="-1" id="offcanvasExample1"
@@ -657,7 +626,7 @@
                         <div class="badgeContainer  ">
                             <span class="badge text ps-3 pe-3 me-1">Hot</span>
                         </div>
-                        <div class="icon d-flex mb-5" >
+                        <div class="icon d-flex mb-5">
                             <p class="p-2 interDescrip fs-6">Wishlist</p>
                             <div class="like p-2 ms-2 mb-3"></div>
                         </div>

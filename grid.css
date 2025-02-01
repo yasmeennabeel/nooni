@@ -103,12 +103,6 @@ body {
 
 }
 
-.container {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-
-}
 
 .blackBan {
     width: 100%;
@@ -168,13 +162,12 @@ nav {
 }
 
 
-.container-fluid {
+/* .container-fluid {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
-}
+} */
 
 .userLogo,
 .favLogo,
@@ -199,6 +192,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+.offcanvas-body a:hover{
+    color: rgba(209, 2, 2, 1);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .breadcrumb{
@@ -248,7 +246,7 @@ nav {
 }
 .carousel-item img{
     width: 100% !important;
-    height: 90vh !important;
+    /* height: 90vh !important; */
 }
 /* #carouselExampleIndicators{
     width: 800px !important;

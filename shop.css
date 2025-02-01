@@ -103,12 +103,12 @@ body {
 
 }
 
-.container {
+/* .container {
     width: 100%;
     max-width: 100%;
     padding: 0;
 
-}
+} */
 
 .blackBan {
     width: 100%;
@@ -172,13 +172,12 @@ nav {
 }
 
 
-.container-fluid {
+/* .container-fluid {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
-}
+} */
 
 .userLogo,
 .favLogo,
@@ -204,6 +203,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+.offcanvas-body a:hover{
+    color: rgba(209, 2, 2, 1);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .breadcrumb{

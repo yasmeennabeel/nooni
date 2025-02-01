@@ -12,107 +12,75 @@
 </head>
 
 <body>
+    <div class="blackBan bg-black roboto-main-light ps-5 pt-2 ">
+        <h6 class="fw-lighter">
+            Up to 40% off Best-Selling Furniture. <a href="#">SHOP NOW</a>
+        </h6>
+
+    </div>
+    <nav class="navbar d-flex col-12">
+        <div class="container">
+        <div class="menu-icon d-flex gap-3" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
+            <i class="bi bi-list"></i>
+            <div class="menu-icon searchIcon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1">
+                <i class="bi bi-search"></i>
+            </div>
+        </div>
+
+        <div class="logoNav">
+            <img src="./pics/logo.png" class="img-fluid" />
+        </div>
+        <div class="userActions ">
+            <img src="./pics/person_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" class="userLogo img-fluid">
+            <img src="./pics/favorite_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="fav"
+                class="favLogo img-fluid">
+            <img src="./pics/shopping_cart_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="cart img-fluid"
+                class="cartLogo">
+        </div>
+        </div>
+    </nav>
     <div class="container">
-        <div class="blackBan bg-black roboto-main-light pt-2 ps-5">
-            <p>
-                Up to 40% off Best-Selling Furniture. <a href="#">SHOP NOW</a>
-            </p>
-        </div>
-        <nav class="navbar d-flex col-12">
-            <div class="menu-icon d-flex gap-3" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
-                <i class="bi bi-list"></i>
-                <div class="menu-icon searchIcon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1">
-                    <i class="bi bi-search"></i>
-                </div>
-            </div>
-
-            <div class="logoNav">
-                <img src="./pics/logo.png" class="img-fluid" />
-            </div>
-            <div class="userActions ">
-                <img src="./pics/person_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" class="userLogo img-fluid">
-                <img src="./pics/favorite_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="fav"
-                    class="favLogo img-fluid">
-                <img src="./pics/shopping_cart_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="cart img-fluid"
-                    class="cartLogo">
-            </div>
-        </nav>
         <div class="offcanvas offcanvasLeft offcanvas-start firstCanva" tabindex="-1" id="menuOffcanvas"
-            aria-labelledby="menuOffcanvasLabel">
-            <div class="offcanvas-header">
-                <h5 id="menuOffcanvasLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="btn-group dropend">
-                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Home
-                    </button>
-                    <ul class="dropdown-menu p-4">
-                        <li>Furniture 1</li>
-                        <li>Furniture 1</li>
-
-                    </ul>
-                </div>
-                <div class="btn-group dropend">
-                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Shop
-                    </button>
-                    <ul class="dropdown-menu p-4">
-                        <li>Furniture 1</li>
-                        <li>Furniture 1</li>
-
-                    </ul>
-                </div>
-                <div class="btn-group dropend">
-                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Product
-                    </button>
-                    <ul class="dropdown-menu p-4">
-                        <li>Furniture 1</li>
-                        <li>Furniture 1</li>
-
-                    </ul>
-                </div>
-                <div class="btn-group dropend">
-                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Blog
-                    </button>
-                    <ul class="dropdown-menu p-4">
-                        <li>Furniture 1</li>
-                        <li>Furniture 1</li>
-
-                    </ul>
-                </div>
-                <div class="btn-group dropend">
-                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        About Us
-                    </button>
-                    <ul class="dropdown-menu p-4">
-                        <li>Furniture 1</li>
-                        <li>Furniture 1</li>
-
-                    </ul>
-                </div>
-                <div class="btn-group dropend">
-                    <button type="button" class="btn btn p-4 dropdown-toggle interFont-solight fs-4"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Contact Us
-                    </button>
-                    <ul class="dropdown-menu p-4">
-                        <li>Furniture 1</li>
-                        <li>Furniture 1</li>
-
-                    </ul>
-                </div>
-
-            </div>
+        aria-labelledby="menuOffcanvasLabel">
+        <div class="offcanvas-header d-flex align-items-center flex-column ">
+            <h5 id="menuOffcanvasLabel" class="interFont-bold">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body gap-4 d-flex flex-column align-items-center">
+            <div class="btn-group dropend">
+                <a href="./index.html" class="interFont-solight fs-4 text-decoration-none">
+                    Home
+                </a>
+
+            </div>
+            <div class="btn-group dropend">
+                <a href="./shop.html" class="interFont-solight fs-4 text-decoration-none">
+                    Shop
+                </a>
+            </div>
+            <div class="btn-group dropend">
+                <a href="./grid.html" class="interFont-solight fs-4 text-decoration-none">
+                    Product
+                </a>
+            </div>
+            <div class="btn-group dropend">
+                <a href="#" class="interFont-solight fs-4 text-decoration-none">
+                    Blog
+                </a>
+            </div>
+            <div class="btn-group dropend">
+                <a href="./aboutus.html" class="interFont-solight fs-4 text-decoration-none">
+                    About Us
+                </a>
+            </div>
+            <div class="btn-group dropend">
+                <a href="./contact.html" class="interFont-solight fs-4 text-decoration-none">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </div>
 
 
         <div class="offcanvas offcanvasRight offcanvas-end firstCanva" tabindex="-1" id="offcanvasExample1"
@@ -143,10 +111,9 @@
             </ol>
         </div>
 
-        <div class="pageContent row d-flex flex-column flex-md-row"">
+        <div class="pageContent row flex-md-row">
             <div class=" col-12 col-md-6">
-            <div class="left">
-                <div class="pageContainerLeft d-flex  ">
+                <div class="container ">
                     <div id="carouselExampleIndicators" class="carousel slide">
                         <div class="carousel-indicators d-flex flex-column justify-content-around align-items-start">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -191,10 +158,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="right">
-                <div class="pageContainerRight d-flex flex-column gap-3 p-3">
+            <div class="col-12 col-md-6">
+                <div class="container d-flex flex-column gap-3">
                     <h2 class="interFont-solight-bigger fs-2 fw-normal text-black">Wood Outdoor Adirondack Chair
                     </h2>
                     <div class="rating  d-flex align-items-center">
@@ -207,7 +172,7 @@
 
                     </div>
                     <div id="countdown-timer "
-                        class="countdown-timer bg-black text-white d-flex justify-content-center align-items-center col-10 p-2 interFont-bold rounded ">
+                        class="countdown-timer bg-black text-white d-flex justify-content-center align-items-center col-12 p-2 interFont-bold rounded ">
                         <span class="days bg-black text-danger"></span> Days :
                         <span class="hours bg-black text-danger"></span> Hours :
                         <span class="minutes bg-black text-danger"></span> Minutes :
@@ -270,343 +235,356 @@
 
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row menu ms-3">
-        <div class="container col-12 col-md-6 d-flex justify-content-between flex-wrap flex-column align-items-center">
-            <ul class="nav nav-tabs gap-5 " id="detailsTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active interFont-bold-small fs-5 rounded" id="dimensions-tab" data-bs-toggle="tab"
-                        data-bs-target="#dimensions" type="button" role="tab" aria-controls="dimensions"
-                        aria-selected="true">
-                        Dimensions
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link  interFont-bold-small fs-5 rounded" id="details-tab" data-bs-toggle="tab"
-                        data-bs-target="#details" type="button" role="tab" aria-controls="details"
-                        aria-selected="false">
-                        Details
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link  interFont-bold-small fs-5 rounded" id="shipping-tab" data-bs-toggle="tab"
-                        data-bs-target="#shipping" type="button" role="tab" aria-controls="shipping"
-                        aria-selected="false">
-                        Delivery & Returns
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link  interFont-bold-small fs-5 rounded" id="reviews-tab" data-bs-toggle="tab"
-                        data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews"
-                        aria-selected="false">
-                        Reviews (3)
-                    </button>
-                </li>
-            </ul>
-            <div class="tab-content  m-4" id="detailsTabsContent">
-                <div class="tab-pane fade show active p-4 col-12" id="dimensions" role="tabpanel"
-                    aria-labelledby="dimensions-tab">
-                    <p><span class="fw-bold text-black">OVERALL </span>64.5" w x 38.5" d x 35"</p>
-                    <p><span class="fw-bold text-black">INSIDE SEATING </span>50.5" w x 22" d x 19.5"</p>
-                    <p><span class="fw-bold text-black">ARM </span>7" w x 38.5" d x 22.5" h
-                    </p>
-                </div>
-
-                <div class="tab-pane fade p-4 col-12" id="details" role="tabpanel" aria-labelledby="details-tab">
-                    <p>Ankara Chair with Fabric Cushion 29.75″Wx28″Dx30.5″H
-                    </p>
-                    <ul>
-                        <li>Frame is benchmade with precision-cut solid ash with grey wash finish, hardwood plywood,
-                            and a cane seat
+            <div class="row menu ms-3 col-12">
+                <div
+                    class="container col-12 d-flex justify-content-between flex-wrap flex-column align-items-center">
+                    <ul class="nav nav-tabs gap-5 " id="detailsTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active interFont-bold-small fs-5 rounded" id="dimensions-tab"
+                                data-bs-toggle="tab" data-bs-target="#dimensions" type="button" role="tab"
+                                aria-controls="dimensions" aria-selected="true">
+                                Dimensions
+                            </button>
                         </li>
-                        <li>Synthetic webbing suspension system
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  interFont-bold-small fs-5 rounded" id="details-tab"
+                                data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab"
+                                aria-controls="details" aria-selected="false">
+                                Details
+                            </button>
                         </li>
-                        <li>Soy-based polyfoam cushion with fiber encased in downproof ticking
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  interFont-bold-small fs-5 rounded" id="shipping-tab"
+                                data-bs-toggle="tab" data-bs-target="#shipping" type="button" role="tab"
+                                aria-controls="shipping" aria-selected="false">
+                                Delivery & Returns
+                            </button>
                         </li>
-                        <li>Frame stained with grey wash finish and clear protective lacquer
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  interFont-bold-small fs-5 rounded" id="reviews-tab"
+                                data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab"
+                                aria-controls="reviews" aria-selected="false">
+                                Reviews (3)
+                            </button>
                         </li>
                     </ul>
-                </div>
-
-                <div class="tab-pane fade p-4 m-4 col-12" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
-                    <h6 class="fw-bold">WHITE GLOVE SERVICE
-                    </h6>
-                    <p>Items are delivered to your room of choice by appointment, then unpacked and fully assembled
-                        by a skilled two-person team. Includes packaging removal and recycling Fee varies by
-                        location and order total. (Doorstep delivery does not include assembly)
-                    </p>
-                    <h6 class="fw-bold">FLAT RATE DELIVERY
-                    </h6>
-                    <p>An unlimited number of eligible furniture and select non-furniture items can be delivered for
-                        one flat rate per shipping address. Your order will ship when all items are ready for
-                        delivery. Fee varies by location and order total.
-                    </p>
-                    <h6 class="fw-bold">RETURN POLICY
-                    </h6>
-                    <p>You can return eligible items within 30 days of receiving an order or 7 days for Quick Ship
-                        upholstery items for a refund of the merchandise value. Made-to-Order furniture is not
-                        eligible for returns.
-                    </p>
-                </div>
-                <div class="tab-pane fade p-4 col-12" id="reviews" role="tabpanel" aria-labelledby="details-tab">
-                    <div class="review d-flex justify-content-center align-items-center gap-5 mt-5=3 p-4 ">
-                        <div class="cust">
-                            <img src="./pics/cx1.png" class="customerImage img-fluid">
-                        </div>
-                        <div class="reviewContent col-6">
-                            <p class="interDescrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                                tortor arcu,
-                                consectetur eleifend commodo at, consectetur eu justo.
+                    <div class="tab-content  m-4" id="detailsTabsContent">
+                        <div class="tab-pane fade show active p-4 col-12" id="dimensions" role="tabpanel"
+                            aria-labelledby="dimensions-tab">
+                            <p><span class="fw-bold text-black">OVERALL </span>64.5" w x 38.5" d x 35"</p>
+                            <p><span class="fw-bold text-black">INSIDE SEATING </span>50.5" w x 22" d x 19.5"</p>
+                            <p><span class="fw-bold text-black">ARM </span>7" w x 38.5" d x 22.5" h
                             </p>
-                            <span class="interFont-solight-small text-uppercase fs-6 fw-semibold me-2">John henrry
-                            </span>
-                            <span class="interFont-solight-small text-uppercase fs-6">May 18, 2023 </span>
                         </div>
-                    </div>
-                    <div class="review d-flex justify-content-center align-items-center gap-5 mt-5=3 p-4">
-                        <div class="cust">
-                            <img src="./pics/cx2.png" class="customerImage img-fluid">
-                        </div>
-                        <div class="reviewContent col-6">
-                            <p class="interDescrip">Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem
-                                ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur
-                                eleifend commodo at, consectetur eu justo.
+
+                        <div class="tab-pane fade p-4 col-12" id="details" role="tabpanel"
+                            aria-labelledby="details-tab">
+                            <p>Ankara Chair with Fabric Cushion 29.75″Wx28″Dx30.5″H
                             </p>
-                            <span class="interFont-solight-small text-uppercase fs-6 fw-semibold me-2">Marcel
-                            </span>
-                            <span class="interFont-solight-small text-uppercase fs-6">May 18, 2023 </span>
+                            <ul>
+                                <li>Frame is benchmade with precision-cut solid ash with grey wash finish, hardwood
+                                    plywood,
+                                    and a cane seat
+                                </li>
+                                <li>Synthetic webbing suspension system
+                                </li>
+                                <li>Soy-based polyfoam cushion with fiber encased in downproof ticking
+                                </li>
+                                <li>Frame stained with grey wash finish and clear protective lacquer
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class=" review d-flex justify-content-center align-items-center gap-5 mt-3 p-4">
-                        <div class="cust">
-                            <img src="./pics/cx3.png" class="customerImage img-fluid">
-                        </div>
-                        <div class="reviewContent col-6">
-                            <p class="interDescrip">Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem
-                                ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur
-                                eleifend commodo at, consectetur eu justo.
+
+                        <div class="tab-pane fade p-4 m-4 col-12" id="shipping" role="tabpanel"
+                            aria-labelledby="shipping-tab">
+                            <h6 class="fw-bold">WHITE GLOVE SERVICE
+                            </h6>
+                            <p>Items are delivered to your room of choice by appointment, then unpacked and fully
+                                assembled
+                                by a skilled two-person team. Includes packaging removal and recycling Fee varies by
+                                location and order total. (Doorstep delivery does not include assembly)
                             </p>
-                            <span class="interFont-solight-small text-uppercase fs-6 fw-semibold me-2">Sophia
-                            </span>
-                            <span class="interFont-solight-small text-uppercase fs-6">May 18, 2023 </span>
+                            <h6 class="fw-bold">FLAT RATE DELIVERY
+                            </h6>
+                            <p>An unlimited number of eligible furniture and select non-furniture items can be delivered
+                                for
+                                one flat rate per shipping address. Your order will ship when all items are ready for
+                                delivery. Fee varies by location and order total.
+                            </p>
+                            <h6 class="fw-bold">RETURN POLICY
+                            </h6>
+                            <p>You can return eligible items within 30 days of receiving an order or 7 days for Quick
+                                Ship
+                                upholstery items for a refund of the merchandise value. Made-to-Order furniture is not
+                                eligible for returns.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade p-4 col-12" id="reviews" role="tabpanel"
+                            aria-labelledby="details-tab">
+                            <div class="review d-flex justify-content-center align-items-center gap-5 mt-5=3 p-4 ">
+                                <div class="cust">
+                                    <img src="./pics/cx1.png" class="customerImage img-fluid">
+                                </div>
+                                <div class="reviewContent col-6">
+                                    <p class="interDescrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Nulla
+                                        tortor arcu,
+                                        consectetur eleifend commodo at, consectetur eu justo.
+                                    </p>
+                                    <span class="interFont-solight-small text-uppercase fs-6 fw-semibold me-2">John
+                                        henrry
+                                    </span>
+                                    <span class="interFont-solight-small text-uppercase fs-6">May 18, 2023 </span>
+                                </div>
+                            </div>
+                            <div class="review d-flex justify-content-center align-items-center gap-5 mt-5=3 p-4">
+                                <div class="cust">
+                                    <img src="./pics/cx2.png" class="customerImage img-fluid">
+                                </div>
+                                <div class="reviewContent col-6">
+                                    <p class="interDescrip">Phasellus vitae imperdiet felis. Nam non condimentum erat.
+                                        Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu,
+                                        consectetur
+                                        eleifend commodo at, consectetur eu justo.
+                                    </p>
+                                    <span class="interFont-solight-small text-uppercase fs-6 fw-semibold me-2">Marcel
+                                    </span>
+                                    <span class="interFont-solight-small text-uppercase fs-6">May 18, 2023 </span>
+                                </div>
+                            </div>
+                            <div class=" review d-flex justify-content-center align-items-center gap-5 mt-3 p-4">
+                                <div class="cust">
+                                    <img src="./pics/cx3.png" class="customerImage img-fluid">
+                                </div>
+                                <div class="reviewContent col-6">
+                                    <p class="interDescrip">Phasellus vitae imperdiet felis. Nam non condimentum erat.
+                                        Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu,
+                                        consectetur
+                                        eleifend commodo at, consectetur eu justo.
+                                    </p>
+                                    <span class="interFont-solight-small text-uppercase fs-6 fw-semibold me-2">Sophia
+                                    </span>
+                                    <span class="interFont-solight-small text-uppercase fs-6">May 18, 2023 </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="interFont-bold ms-4">Related products </h3>
+
+            <div class="allItems col-12 d-flex  justify-content-center align-items-center mb-5 ">
+                <div class="cardContainer col-12 col-md-6 col-lg-3 d-flex flex-column">
+                    <div class="card col-12 d-flex flex-column justify-content-between" id="blackChair">
+                        <div class="badgeContainer d-flex ">
+                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                            <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
+                        </div>
+                        <div class="icon d-flex mb-5">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100 d-flex flex-column">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Wood Outdoor Adirondack Chair</h4>
+                        <div class="price p-2 d-flex">
+                            <p class="me-3 interFont-bold-small fs-6">$1,009</p><span
+                                class="interFont-solight-small fs-6 text-decoration-line-through">$1,259</span>
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <h3 class="interFont-bold ms-4">Related products </h3>
-
-    <div class="allItems col-12 d-flex  justify-content-center align-items-center mb-5 ">
-        <div class="cardContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-            <div class="card col-12 d-flex flex-column justify-content-between" id="blackChair">
-                <div class="badgeContainer d-flex ">
-                    <span class="badge text ps-3 pe-3 me-1">Hot</span>
-                    <span class="badge text-bg-dark ps-3 pe-3 me-1">Sale</span>
-                </div>
-                <div class="icon d-flex mb-5">
-                    <p class="p-2 interDescrip fs-6">Wishlist</p>
-                    <div class="like p-2 ms-2 mb-3"></div>
-                </div>
-                <div class="buttonContainer  w-100 d-flex flex-column">
-                    <button type="button" class="button border-0 interFont-bold-small">Select
-                        Options</button>
-                </div>
-            </div>
-            <div class="cardTitle d-flex flex-column p-2">
-                <h4 class="interFont-solight-small">Wood Outdoor Adirondack Chair</h4>
-                <div class="price p-2 d-flex">
-                    <p class="me-3 interFont-bold-small fs-6">$1,009</p><span
-                        class="interFont-solight-small fs-6 text-decoration-line-through">$1,259</span>
-                </div>
-            </div>
-        </div>
-        <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-            <div class="card col-12 d-flex flex-column justify-content-between" id="cabinet">
-                <div class="badgeContainer  ">
-                    <span class="badge text ps-3 pe-3 me-1">Hot</span>
-                </div>
-                <div class="icon d-flex mb-5" id="icon2">
-                    <p class="p-2 interDescrip fs-6">Wishlist</p>
-                    <div class="like p-2 ms-2 mb-3"></div>
-                </div>
-                <div class="buttonContainer  w-100 d-flex flex-column">
-                    <button type="button" class="button border-0 interFont-bold-small">Select
-                        Options</button>
-                </div>
-            </div>
-            <div class="cardTitle d-flex flex-column p-2">
-                <h4 class="interFont-solight-small">Solid Wood Bar Storage Cabinet</h4>
-                <div class="price p-2 d-flex">
-                    <p class="me-3 interFont-bold-small fs-6">$1,889</p>
-                </div>
-            </div>
-        </div>
-        <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-            <div class="card col-12 d-flex flex-column justify-content-between" id="lamp">
-                <div class="badgeContainer d-flex ">
-                    <span class="badge text-bg-secondary ps-3 pe-3">Sold Out</span>
-                </div>
-                <div class="icon d-flex mb-5">
-                    <p class="p-2 interDescrip fs-6">Wishlist</p>
-                    <div class="like p-2 ms-2 mb-3"></div>
-                </div>
-                <div class="buttonContainer  w-100 d-flex flex-column">
-                    <button type="button" class="button border-0 interFont-bold-small">Select
-                        Options</button>
-                </div>
-            </div>
-            <div class="cardTitle d-flex flex-column p-2">
-                <h4 class="interFont-solight-small">Floor Lamp with Polyester Shade</h4>
-                <p class="me-3 interFont-bold-small fs-6">$399</p>
-            </div>
-        </div>
-        <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
-            <div class="card col-12 d-flex flex-column justify-content-between" id="blueChair">
-                <div class="badgeContainer d-flex ">
-                    <span class="badge text ps-3 pe-3 me-1">Hot</span>
-                </div>
-                <div class="icon d-flex mb-5">
-                    <p class="p-2 interDescrip fs-6">Wishlist</p>
-                    <div class="like p-2 ms-2 mb-3"></div>
-                </div>
-                <div class="buttonContainer  w-100 d-flex flex-column">
-                    <button type="button" class="button border-0 interFont-bold-small">Select
-                        Options</button>
-                </div>
-            </div>
-            <div class="cardTitle d-flex flex-column p-2">
-                <h4 class="interFont-solight-small">Left-Arm Chaise Bumper</h4>
-                <p class="me-3 interFont-bold-small fs-6">$1,349</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer col-12 mt-5 pt-5">
-
-        <footer class=" text-center text-lg-start" style="background-color: #f1f1f1;">
-            <div class="row mt-4">
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-
-                    <div
-                        class="logoFooter shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto">
-                        <img src="./pics/logo.png" alt="" loading="lazy" class="mb-5 img-fluid" />
-                        <p class="text-center">Text: +00(234)23-45-666</p>
-                        <p class="text-center">Mon – Fri: 8 am – 8 pm</p>
-                        <p class="text-center">Sat – Sun: 8 am – 7 pm </p>
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="card col-12 d-flex flex-column justify-content-between" id="cabinet">
+                        <div class="badgeContainer  ">
+                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                        </div>
+                        <div class="icon d-flex mb-5" id="icon2">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100 d-flex flex-column">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Solid Wood Bar Storage Cabinet</h4>
+                        <div class="price p-2 d-flex">
+                            <p class="me-3 interFont-bold-small fs-6">$1,889</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="footer1 col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4 interFont-bold  fs-6">about</h5>
-
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <a href="#" class="footerLink text-black interFont-solight-small ">Our
-                                Story</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="footerLink text-black interFont-solight-small ">Careers</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class=" footerLink text-black interFont-solight-small ">Influencers</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="footerLink text-black interFont-solight-small ">Join
-                                our team</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4 interFont-bold fs-6">Customer Services</h5>
-
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <a href="#!" class=" footerLink text-black interFont-solight-small ">Contact
-                                Us</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#!" class="footerLink text-black interFont-solight-small ">Customer
-                                Service</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#!" class="footerLink text-black interFont-solight-small ">Find
-                                Store</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#!" class="footerLink text-black interFont-solight-small ">Book
-                                appointment</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#!" class="footerLink text-black interFont-solight-small ">Shipping
-                                &
-                                Returns</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class=" signUp col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4 interFont-bold fs-6">SIGN UP FOR EMAILS</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <p><i class="fas fa-map-marker-alt pe-1 interFont-solight-small "></i>Enjoy
-                                15%
-                                off*
-                                your first order
-                                when sign up to our newsletter</p>
-                        </li>
-                        <li>
-                            <input type="email" placeholder="Your email address">
-                            <button type="button"
-                                class="subscribeButton bg-black text-white ms-4 ps-4 pe-4 pt-2 pb-2 interFont-bold-small border-0">SUBSCRIBE</button>
-                        </li>
-                    </ul>
-                    <div class="socialMedia ">
-                        <button type="button" class="btn m-2">
-                            <i class="bi bi-facebook"></i>
-                        </button>
-                        <button type="button" class="btn m-2">
-                            <i class="bi bi-twitter"></i>
-                        </button>
-                        <button type="button" class="btn m-2">
-                            <i class="bi bi-instagram"></i>
-                        </button>
-                        <button type="button" class="btn m-2">
-                            <i class="bi bi-pinterest"></i>
-                        </button>
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="card col-12 d-flex flex-column justify-content-between" id="lamp">
+                        <div class="badgeContainer d-flex ">
+                            <span class="badge text-bg-secondary ps-3 pe-3">Sold Out</span>
+                        </div>
+                        <div class="icon d-flex mb-5">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100 d-flex flex-column">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Floor Lamp with Polyester Shade</h4>
+                        <p class="me-3 interFont-bold-small fs-6">$399</p>
                     </div>
                 </div>
+                <div class="itemContainer col-12 col-md-6 col-lg-3 p-2 d-flex flex-column">
+                    <div class="card col-12 d-flex flex-column justify-content-between" id="blueChair">
+                        <div class="badgeContainer d-flex ">
+                            <span class="badge text ps-3 pe-3 me-1">Hot</span>
+                        </div>
+                        <div class="icon d-flex mb-5">
+                            <p class="p-2 interDescrip fs-6">Wishlist</p>
+                            <div class="like p-2 ms-2 mb-3"></div>
+                        </div>
+                        <div class="buttonContainer  w-100 d-flex flex-column">
+                            <button type="button" class="button border-0 interFont-bold-small">Select
+                                Options</button>
+                        </div>
+                    </div>
+                    <div class="cardTitle d-flex flex-column p-2">
+                        <h4 class="interFont-solight-small">Left-Arm Chaise Bumper</h4>
+                        <p class="me-3 interFont-bold-small fs-6">$1,349</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer col-12 mt-5 pt-5">
+
+                <footer class=" text-center text-lg-start" style="background-color: #f1f1f1;">
+                    <div class="row mt-4">
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                            <div
+                                class="logoFooter shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto">
+                                <img src="./pics/logo.png" alt="" loading="lazy" class="mb-5 img-fluid" />
+                                <p class="text-center">Text: +00(234)23-45-666</p>
+                                <p class="text-center">Mon – Fri: 8 am – 8 pm</p>
+                                <p class="text-center">Sat – Sun: 8 am – 7 pm </p>
+                            </div>
+                        </div>
+
+                        <div class="footer1 col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4 interFont-bold  fs-6">about</h5>
+
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#" class="footerLink text-black interFont-solight-small ">Our
+                                        Story</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="footerLink text-black interFont-solight-small ">Careers</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class=" footerLink text-black interFont-solight-small ">Influencers</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="footerLink text-black interFont-solight-small ">Join
+                                        our team</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4 interFont-bold fs-6">Customer Services</h5>
+
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#!" class=" footerLink text-black interFont-solight-small ">Contact
+                                        Us</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="footerLink text-black interFont-solight-small ">Customer
+                                        Service</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="footerLink text-black interFont-solight-small ">Find
+                                        Store</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="footerLink text-black interFont-solight-small ">Book
+                                        appointment</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="footerLink text-black interFont-solight-small ">Shipping
+                                        &
+                                        Returns</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class=" signUp col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4 interFont-bold fs-6">SIGN UP FOR EMAILS</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt pe-1 interFont-solight-small "></i>Enjoy
+                                        15%
+                                        off*
+                                        your first order
+                                        when sign up to our newsletter</p>
+                                </li>
+                                <li>
+                                    <input type="email" placeholder="Your email address">
+                                    <button type="button"
+                                        class="subscribeButton bg-black text-white ms-4 ps-4 pe-4 pt-2 pb-2 interFont-bold-small border-0">SUBSCRIBE</button>
+                                </li>
+                            </ul>
+                            <div class="socialMedia ">
+                                <button type="button" class="btn m-2">
+                                    <i class="bi bi-facebook"></i>
+                                </button>
+                                <button type="button" class="btn m-2">
+                                    <i class="bi bi-twitter"></i>
+                                </button>
+                                <button type="button" class="btn m-2">
+                                    <i class="bi bi-instagram"></i>
+                                </button>
+                                <button type="button" class="btn m-2">
+                                    <i class="bi bi-pinterest"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class=" copyrightContainer border-top text-center p-3 border-black ">
+                        <div class="linkFooter">
+                            <a href="#" class="p-2">Privacy Policy</a>
+                            <a href="#" class="p-2">Help</a>
+                            <a href="#" class="p-2">FAQs</a>
+                        </div>
+                        <p>
+                            © Nooni. All Rights Reserved.
+                        </p>
+                        <div class="payFooter">
+                            <img src="./pics/ca.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </footer>
 
             </div>
 
-
-            <div class=" copyrightContainer border-top text-center p-3 border-black ">
-                <div class="linkFooter">
-                    <a href="#" class="p-2">Privacy Policy</a>
-                    <a href="#" class="p-2">Help</a>
-                    <a href="#" class="p-2">FAQs</a>
-                </div>
-                <p>
-                    © Nooni. All Rights Reserved.
-                </p>
-                <div class="payFooter">
-                    <img src="./pics/ca.png" alt="" class="img-fluid">
-                </div>
-            </div>
-        </footer>
+        </div>
 
     </div>
-
-    </div>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
