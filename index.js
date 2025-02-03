@@ -23,3 +23,29 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(el);
     });
 });
+
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true, 
+    },
+  
+  
+  });
+const swiper2 = new Swiper('.mySwiper', {
+   
+    breakpoints: {
+        768:{
+            slidesPreview:4,
+        },
+        0:{
+            slidesPreview:3,
+        }
+    }
+
+})
+
+  
