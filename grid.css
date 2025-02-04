@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -72,7 +73,8 @@
     font-size: 13px;
     color: black;
 }
-.interFont-bold-large{
+
+.interFont-bold-large {
     font-family: "Inter", serif;
     font-weight: 650;
     font-style: normal;
@@ -117,8 +119,9 @@ body {
 .blackBan a {
     color: white;
 }
-.blackBan a:hover{
-color: rgb(160, 160, 160);
+
+.blackBan a:hover {
+    color: rgb(160, 160, 160);
 }
 
 .roboto-main-light {
@@ -146,10 +149,11 @@ nav {
     background-color: white;
     border-bottom: 1px solid rgba(206, 206, 206, 0.885);
 }
+
 .navbar i {
     cursor: pointer;
-    }
-    
+}
+
 
 .logoNav img {
     display: flex;
@@ -161,19 +165,13 @@ nav {
     width: 70px;
 }
 
-
-/* .container-fluid {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .userLogo,
 .favLogo,
 .cartLogo {
     width: 30px;
 }
+
+
 .offcanvas-body {
     display: flex;
     flex-wrap: wrap;
@@ -193,61 +191,76 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
 }
-.offcanvas-body a:hover{
+
+.offcanvas-body a:hover {
     color: rgba(209, 2, 2, 1);
     font-weight: bold;
     text-decoration: underline;
 }
 
-.breadcrumb{
+.breadcrumb {
     display: flex;
     justify-content: center;
 }
-.breadcrumb-item a{
+
+.breadcrumb-item a {
     text-decoration: none;
     color: rgba(16, 16, 16, 0.792);
 }
-.breadcrumb li:hover{
-    color: rgba(209, 2, 2, 1);
-    text-decoration: underline;
-}
-.breadcrumb a:hover{
+
+.breadcrumb li:hover {
     color: rgba(209, 2, 2, 1);
     text-decoration: underline;
 }
 
-#slide1{
-    background-image: url('./pics/woodenchair.jpg') !important; 
+.breadcrumb a:hover {
+    color: rgba(209, 2, 2, 1);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .userActions .userLogo {
+        display: none;
+    }
+}
+
+#slide1 {
+    background-image: url('./pics/woodenchair.jpg') !important;
     background-size: contain !important;
     border-radius: 0 !important;
     height: 5rem !important;
     width: 5rem !important;
 }
-#slide2{
-    background-image: url('./pics/woodenchairwesh.jpg')!important ;
+
+#slide2 {
+    background-image: url('./pics/woodenchairwesh.jpg') !important;
     background-size: contain !important;
     border-radius: 0 !important;
     height: 5rem !important;
     width: 5rem !important;
 }
-#slide3{
+
+#slide3 {
     background-image: url("./pics/woodenchairgamb.jpg") !important;
     background-size: contain !important;
     border-radius: 0 !important;
     height: 5rem !important;
     width: 5rem !important;
 }
-#slide4{
+
+#slide4 {
     background-image: url('./pics/woodenchairdahr.jpg') !important;
     background-size: contain !important;
     border-radius: 0 !important;
     height: 5rem !important;
     width: 5rem !important;
 }
-.carousel-item img{
+
+.carousel-item img {
     width: 100% !important;
     /* height: 90vh !important; */
 }
+
 /* #carouselExampleIndicators{
     width: 800px !important;
     height: 90vh !important;
@@ -259,43 +272,57 @@ nav {
     text-transform: uppercase;
 }
 
-  .countdown-timer {
+.countdown-timer {
     font-family: Arial, sans-serif;
-    display: flex;
     gap: 7px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    justify-content: center;
-    margin-top: 20px;
-  }
 
-  .countdown-timer span {
+}
+
+.countdown-timer span {
     background-color: #f8f9fa;
     padding: 10px 15px;
     border-radius: 5px;
     color: #333;
     text-align: center;
-  }
-  .colorOptions img{
+}
+
+@media (max-width: 768px) {
+    .countdown-timer {
+        font-family: Arial, sans-serif;
+        gap: 5px;
+        font-size: 10px;
+        font-weight: bold;
+
+    }
+}
+
+.section-1 button {
+    border: none;
+}
+
+.colorOptions img {
     border: 4px solid rgb(218, 215, 215);
-    
-  }
-  .colorOptions img:hover{
+
+}
+
+.colorOptions img:hover {
     cursor: pointer;
-    transform: scale(1.1); 
+    transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
     border: 6px solid rgb(67, 63, 63);
 
-  }
+}
 
-  .quantity-counter {
+.quantity-counter {
     display: flex;
     align-items: center;
     gap: 5px;
     font-family: Arial, sans-serif;
-  }
+}
 
-  .quantity-counter button {
+.quantity-counter button {
     background-color: #f8f9fa;
     border: 1px solid #ccc;
     padding: 5px 10px;
@@ -303,84 +330,99 @@ nav {
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.2s ease;
-  }
+}
 
-  .quantity-counter button:hover {
+.quantity-counter button:hover {
     background-color: #ddd;
-  }
+}
 
-  .quantity-input {
+.quantity-input {
     width: 50px;
     text-align: center;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 5px;
-  }
-  .colorOptions{
+}
+
+.colorOptions {
     transition: ease all 500ms;
     overflow: hidden;
-  }
-  .addCart:hover{
+}
+
+.addCart:hover {
     background-color: black !important;
-    border: 3px solid grey !important;
+    border: 1px solid grey !important;
     color: white !important;
-  }
-  .buyNow:hover{
+}
+
+.buyNow:hover {
     background-color: black !important;
-    border: 3px solid grey !important;
+    border: 1px solid grey !important;
     color: white !important;
-  }
-  .wish img{
+}
+
+.wish img {
     width: 30px;
-  }
-  /* .wish h6{
+}
+
+/* .wish h6{
     line-height: 2rem;
   } */
-  .wish:hover img{
+.wish:hover img {
     color: rgba(209, 2, 2, 1);
     cursor: pointer;
-  }
-  .wish:hover h6{
-    color: rgba(209, 2, 2, 1);
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  .socialMedia i:hover {
-    color: rgba(209, 2, 2, 1);
 }
-.model span:hover{
+
+.wish:hover h6 {
     color: rgba(209, 2, 2, 1);
     cursor: pointer;
     text-decoration: underline;
 }
-.model span{
+
+.socialMedia i:hover {
+    color: rgba(209, 2, 2, 1);
+}
+
+.model span:hover {
+    color: rgba(209, 2, 2, 1);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.model span {
     color: gray;
+}
+
+.section-menu ul {
+    border-bottom: 1px solid rgba(135, 132, 132, 0.521);
+    padding-bottom: 15px;
+    /* width: 100%; */
 }
 
 .nav-tabs .nav-link {
     border-radius: 0;
     color: #333;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .nav-tabs .nav-link.active {
+}
+
+.nav-tabs .nav-link.active {
     background-color: rgba(209, 2, 2, 1);
     color: #fff;
-  }
-  
-  .nav-tabs .nav-link:hover {
+}
+
+.nav-tabs .nav-link:hover {
     color: white;
     background-color: #858585;
-  }
-  
-  .tab-content {
+}
+
+.tab-content {
     border: 1px solid #ddd;
     border-top: none;
     background-color: #fff;
-  }
-  
-  .allItems {
+}
+
+.allItems {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
@@ -415,20 +457,24 @@ nav {
     background-image: url('./pics/lamphover.jpg');
 
 }
-#blueChair{
+
+#blueChair {
     background-image: url('./pics/blue.jpg');
     width: 100%;
     height: 400px;
 }
-#blueChair:hover{
+
+#blueChair:hover {
     background-image: url('./pics/woodenchair.jpg');
 
 }
-#blackChair{
+
+#blackChair {
     background-image: url('./pics/chairblacknohover.jpg');
     width: 100%;
 }
-#blackChair:hover{
+
+#blackChair:hover {
     background-image: url('./pics/chairblackhover.jpg');
 
 }
@@ -442,6 +488,7 @@ nav {
 #woodChair:hover {
     background-image: url('./pics/woodenchair.jpg');
 }
+
 #cabinet {
     background-image: url('./pics/cabinet\ no\ hover.jpg');
     width: 100%;
@@ -533,7 +580,8 @@ nav {
     bottom: -180px;
     right: 0px;
 }
-.likeWish{
+
+.likeWish {
     width: 35px;
     height: 35px;
     background-color: white;
@@ -554,6 +602,7 @@ nav {
     background-repeat: no-repeat;
     cursor: pointer;
 }
+
 .like:hover {
     background-color: rgba(209, 2, 2, 1);
     border-radius: 50%;
@@ -579,13 +628,15 @@ nav {
     color: rgba(209, 2, 2, 1);
 }
 
-.customerImage{
+.customerImage {
     border-radius: 50%;
     width: 80px;
 }
-.review{
+
+.review {
     border-bottom: 2px rgba(190, 186, 186, 0.589) solid;
 }
+
 .logoFooter {
     display: flex;
     flex-wrap: wrap;

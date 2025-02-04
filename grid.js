@@ -1,28 +1,30 @@
-  const targetDate = new Date("2025-02-01T23:59:59").getTime();
+const targetDate = new Date("2025-05-05T23:59:59").getTime();
 
-  function updateTimer() {
+function updateTimer() {
     const now = new Date().getTime();
     const timeLeft = targetDate - now;
 
     if (timeLeft > 0) {
-      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-      document.querySelector(".countdown-timer .days").textContent = days;
-      document.querySelector(".countdown-timer .hours").textContent = hours;
-      document.querySelector(".countdown-timer .minutes").textContent = minutes;
-      document.querySelector(".countdown-timer .seconds").textContent = seconds;
+        document.querySelector(".days").textContent = days;
+        document.querySelector(".hours").textContent = hours;
+        document.querySelector(".minutes").textContent = minutes;
+        document.querySelector(".seconds").textContent = seconds;
     } else {
-      document.getElementById("countdown-timer").textContent = "Time's up!";
-      clearInterval(timerInterval);
+        clearInterval(timerInterval);
+        document.getElementById("countdown-timer").textContent = "Time's up!";
     }
-  }
+}
 
-  const timerInterval = setInterval(updateTimer, 1000);
+// Update every second
+const timerInterval = setInterval(updateTimer, 1000);
 
-  updateTimer();
+// Initial call to display values immediately
+updateTimer();
 
 
   const minusBtn = document.querySelector('.minus-btn');
