@@ -295,7 +295,6 @@ label:hover{
     object-fit: cover;
   }
    .layer{
-    /* d-none position-absolute bg-black start-0 end-0 bottom-0 top-0 */
     position: absolute;
     top: 0;
     left: 0;
@@ -303,7 +302,9 @@ label:hover{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0; 
-    transition: opacity 0.3s ease; /
+    transition: opacity 0.3s ease; 
+    cursor: pointer;
+
 
   }
   swiper-slide:hover .layer{

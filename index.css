@@ -223,6 +223,10 @@ nav {
     height: 300px;
   } */
 
+
+
+  
+
 .hero-section .swiper-pagination{
     position: unset;
 
@@ -301,6 +305,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0; 
     transition: opacity 0.3s ease; 
+    cursor: pointer;
 
   }
   swiper-slide:hover .layer{
@@ -340,84 +345,6 @@ display: block;
     color: rgba(209, 2, 2, 1);
     font-weight: bold;
     text-decoration: underline;
-}
-
-.lampalone {
-    width: 180px;
-    transition: ease all 500ms;
-
-}
-
-.lampalone:hover {
-    padding: 0px;
-    margin: 15px;
-}
-
-.offersRight img {
-    width: 650px;
-    transition: ease all 500ms;
-    cursor: pointer;
-    border: 1px solid black;
-}
-
-.offersRight img:hover {
-    border: 2px solid black;
-    margin: 0px;
-    padding: 10px;
-}
-
-.offersRight {
-    display: flex;
-    justify-content: right;
-
-}
-
-.offersBottom img {
-    transition: ease all 500ms;
-    cursor: pointer;
-    border: 1px solid black;
-}
-
-.greenpic:hover {
-    border: 2px solid black;
-    margin: 0px;
-    padding: 10px;
-}
-
-.offersLeftContent a:hover {
-    color: rgba(209, 2, 2, 1);
-}
-
-.offersPics {
-    margin-top: 20px;
-}
-
-.offersRight {
-    order: 1;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.offersRight img {
-    width: 90%;
-    max-width: 400px;
-}
-
-.offersLeft {
-    order: 2;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.offersLeftContent {
-    flex: 1;
-    max-width: 60%;
-    text-align: left;
-    padding: 10px;
 }
 
 .orangeTitle {
@@ -492,25 +419,6 @@ display: block;
     background-color: rgba(209, 2, 2, 1);
 }
 
-/* 
-.imageContainer .lampImage {
-    position: absolute;
-    top: 120px;
-    right: 10px;
-}
-.leftContent{
-    position: relative;
-}
-.section-container{
-    position: relative;
-}
-.greenImage{
-    position: absolute;
-    bottom: 0;
-}
-.section-3 img {
-    transition: transform 0.6s ease, opacity 0.4s ease;
-} */
 .imageContainer .lampImage {
     width: 250px;
     position: absolute;
@@ -524,34 +432,40 @@ display: block;
     transition: all 0.6s ease;
 } 
 
-/* .innerBorder {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 90%;
-    height: 90%;
-    border: 2px solid transparent;
-    pointer-events: none;
-    transition: all 0.6s ease;
-} */
-
 .section-3 a:hover {
     color: rgba(209, 2, 2, 1);
 }
 
+.innerBorder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid transparent; 
+    transition: border-width 1s ease-in-out;
+  }
+  
+    @keyframes drawBorder {
+    0% {
+      border-width: 0;
+    }
+    100% {
+        border: 1px solid black; 
+    }
+  }
+  
+  .imageContainer:hover .innerBorder {
+    animation: drawBorder 1s forwards;
+    cursor: pointer;
+  }
 .imageContainer:hover img {
     transform: scale(1.03);
     opacity: 0.85;
     cursor: pointer;
 }
 
-.imageContainer:hover .innerBorder {
-    border-color: rgba(0, 0, 0, 0.6);
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
 
 
 
@@ -798,7 +712,7 @@ display: block;
 
 .videoContainer {
     width: 1450px;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -808,7 +722,7 @@ display: block;
 
 .video {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     object-fit: fill
 }
 
@@ -866,7 +780,7 @@ display: block;
     color: white;
     z-index: 10;
     top: 15px;
-    left: 15px;
+    left: 35px;
   }
   .our-blog swiper-slide a:hover{
     color: rgba(209, 2, 2, 1) !important;
